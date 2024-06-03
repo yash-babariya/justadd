@@ -4,6 +4,7 @@ import './header.scss';
 import logo from '../../../assets/logo/logo.webp';
 import { HiUserCircle } from "react-icons/hi";
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
+import { FaCaretDown } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { useDispatch, useSelector } from 'react-redux';
 import { FiHeart } from "react-icons/fi";
@@ -28,14 +29,27 @@ export default function Header() {
         window.location.reload();
     }
 
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setDropdownOpen(!dropdownOpen);
+    };
+
+
     return (
         <div className='header-main'>
             <div className={`sidenav ${isNavOpen ? 'open' : ''}`}>
-                <Link className="closebtn" onClick={closeNav}>&times;</Link>
-                <Link>About</Link>
-                <Link>Services</Link>
-                <Link>Clients</Link>
-                <Link>Contact</Link>
+                <div className="closebtn" onClick={closeNav}>&times;</div>
+                <Link className="menu-item" to={"/"}>Home</Link>
+                <div className='menu-item category' onClick={toggleDropdown} >Category<FaCaretDown /></div>
+                <div className={`dropdown-category ${dropdownOpen ? 'open' : ''}`}>
+                    <Link to={'/furniture'} onClick={closeNav}>Furniture</Link>
+                    <Link to={'/cosmetics'} onClick={closeNav}>Cosmetic</Link>
+                    <Link to={'/electronics'} onClick={closeNav}>Electronics</Link>
+                    <Link to={'/clothes'} onClick={closeNav}>Clothes</Link>
+                </div>
+                <Link className="menu-item" to={"/shop"} onClick={closeNav}>Shop</Link>
+                <Link className="menu-item" to={"/profile"} onClick={closeNav}>Profile </Link>
             </div>
             <div className="container">
                 <header>
