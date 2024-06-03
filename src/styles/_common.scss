@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* in your sofa.scss file */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 0.5s ease-in-out;
+}
+
+.wishlist-button {
+    position: fixed;
+    left: -50px;
+    top: 50vh;
+    transform: translate(0, -50%) rotate(-90deg);
+    background-color: var(--theme-white-background);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+    padding: 10px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 20px;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
+
+    span {
+        font-size: 20px;
+        color: var(--theme-primary-border);
+    }
+
+    .icon {
+        font-size: 20px;
+        color: var(--theme-pink-color);
+        fill: var(--theme-pink-color);
+    }
+}
+
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto Condensed", sans-serif;
+    src: url('../assets/fonts/Roboto/RobotoCondensed-Regular.ttf');
+}

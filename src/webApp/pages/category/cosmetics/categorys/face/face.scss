@@ -1,0 +1,161 @@
+@import '../../../../../../styles/index.scss';
+
+.face {
+
+    padding: 32px;
+
+    .wishlist-icon {
+
+        .icon {
+            cursor: pointer;
+            font-size: 25px;
+            color: var(--theme-grey-color);
+        }
+
+
+        .heart-icon {
+
+            path {
+                transition: .3s ease-in-out;
+            }
+
+            &:hover {
+                color: var(--theme-light-pink-color);
+                transition: .3s ease-in-out;
+            }
+
+            &.favorite {
+                color: var(--theme-pink-color);
+                fill: var(--theme-pink-background);
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+
+    .container {
+
+        section {
+
+            .heading {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-bottom: 20px;
+                width: 100%;
+
+                img {
+                    width: 55px;
+                    height: 55px;
+                    object-fit: cover;
+                    display: block;
+                    border-radius: 50%;
+                    border: 2px solid var(--theme-pink-color);
+                }
+
+                h2 {
+                    margin-left: 10px;
+                    font-size: 30px;
+                    color: var(--theme-pink-color);
+                    text-transform: capitalize;
+                    font-weight: 200;
+                    letter-spacing: 2px;
+                    text-align: center;
+                }
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 30px;
+
+                .grid-item {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    background-color: var(--theme-white-background);
+                    border-radius: 20px;
+                    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                    padding: 20px;
+
+                    .category-img {
+                        width: 100%;
+                        height: 320px;
+                        border-radius: 15px;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: block;
+                            transition: .5s ease-in-out;
+
+                        }
+                    }
+
+                    h3 {
+                        text-align: center;
+                        margin-top: 10px;
+                        font-size: 20px;
+                        color: var(--theme-pink-color);
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-size: 15px;
+                        color: var(--theme-grey-color);
+                        font-weight: 800;
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                    }
+
+                    &:hover {
+                        .category-img {
+                            img {
+                                transform: scale(1.1);
+                                transition: .5s ease-in-out;
+                            }
+                        }
+                    }
+
+                    .add-cart-btn {
+                        width: fit-content;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 5px;
+                            background-color: var(--theme-pink-color);
+                            color: var(--theme-white-color);
+                            padding: 10px 20px;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            font-size: 18px;
+                            font-weight: 600;
+                            text-transform: capitalize;
+
+                            &:hover {
+                                background-color: #ec1c80;
+                            }
+
+                            .icon {
+                                margin-bottom: 3px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

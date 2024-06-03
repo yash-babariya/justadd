@@ -1,0 +1,135 @@
+@import '../../../../styles/index.scss';
+
+.herobanner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    section {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        width: 100%;
+        height: calc(100vh - 90.03px);
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .hero-text {
+            background-color: black;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media (max-width: 768px) {
+                height: 40vh;
+            }
+
+            h4 {
+                font-family: "Roboto Condensed", sans-serif;
+                color: var(--theme-white-color);
+                font-size: 50px;
+                font-weight: 100;
+                margin-bottom: 10px;
+
+                @media (max-width: 768px) {
+                    font-size: 35px;
+
+                }
+
+                @media (max-width: 425px) {
+                    font-size: 30px;
+                }
+            }
+
+            h1 {
+                font-size: 45px;
+                color: var(--theme-white-color);
+                font-weight: 800;
+                margin-bottom: 15px;
+                line-height: 1;
+
+                @media (max-width: 768px) {
+                    font-size: 35px;
+
+                    span {
+                        display: none;
+                    }
+                }
+
+                @media (max-width: 425px) {
+                    font-size: 30px;
+                }
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-top: 20px;
+
+                @media (max-width: 468px) {
+                    gap: 10px;
+                }
+
+
+                button {
+                    padding: 8px 50px;
+                    cursor: pointer;
+                    border: 5px solid var(--theme-light-pink-border);
+                    background-color: var(--theme-light-pink-background);
+                    color: var(--theme-primary-color);
+                    outline: none;
+                    font-size: 20px;
+                    font-weight: 500;
+                    transition: background-color 0.3s, border-color 0.3s;
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                        padding: 8px 30px;
+                    }
+
+                    @media (max-width: 425px) {
+                        font-size: 14px;
+                        padding: 6px 16px;
+                    }
+
+                    &:hover {
+                        background-color: var(--theme-primary-background);
+                        color: var(--theme-light-pink-color);
+                    }
+
+                    &:last-child {
+                        background-color: var(--theme-primary-background);
+                        color: var(--theme-light-pink-color);
+
+                        &:hover {
+                            color: var(--theme-primary-color);
+                            background-color: var(--theme-light-pink-background);
+                            border-color: var(--theme-light-pink-border);
+                        }
+                    }
+                }
+            }
+        }
+
+        .hero-img {
+            width: 100%;
+            height: calc(100vh - 90.03px);
+
+            @media (max-width: 768px) {
+                height: calc(60vh - 73.53px);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+}
