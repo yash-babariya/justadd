@@ -4,19 +4,17 @@ import './herobanner.scss';
 export default function HerobannnerCosmetics() {
     return (
         <div className='herobanner-cosmetics'>
-            <div className="container">
-                <section>
-                    <h4>Welcome to JustAdd</h4>
-                    <div className="heading">
-                        <h3>Reveal Your Inner Glow</h3>
-                    </div>
-                    <div className="details">
-                        <p>
-                            "Explore our curated collection of cosmetics crafted with care, and embark on a journey to discover your true brilliance."
-                        </p>
-                    </div>
-                </section>
-            </div>
+            <section>
+                <h4>Welcome to JustAdd</h4>
+                <div className="heading">
+                    <h3>Reveal Your Inner Glow</h3>
+                </div>
+                <div className="details">
+                    <p>
+                        "Explore our curated collection of cosmetics crafted with care, and embark on a journey to discover your true brilliance."
+                    </p>
+                </div>
+            </section>
         </div>
     )
 }
