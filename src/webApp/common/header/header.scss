@@ -242,10 +242,6 @@
                     background-color: var(--theme-primary-pink-background);
                     padding: 3px 8px;
                     border-radius: 50%;
-
-                    @media(max-width: 768px) {
-                        display: none;
-                    }
                 }
             }
 
@@ -264,10 +260,6 @@
             .icon {
                 font-size: 25px;
                 color: var(--theme-primary-color);
-
-                @media(max-width: 768px) {
-                    display: none;
-                }
             }
         }
     }
