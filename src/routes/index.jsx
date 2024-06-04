@@ -17,6 +17,7 @@ const Shop = lazy(() => import('../webApp/pages/shop/shop'));
 const FavCart = lazy(() => import('../webApp/pages/favcart/favcart'));
 const Cosmetics = lazy(() => import('../webApp/pages/category/cosmetics/cosmetics'));
 const Face = lazy(() => import('../webApp/pages/category/cosmetics/categorys/face/face'));
+const Chair = lazy(() => import('../webApp/pages/category/furniture/chair/chair'));
 
 const router = createBrowserRouter([
     {
@@ -60,6 +61,14 @@ const router = createBrowserRouter([
                 element: (
                     <DelayedSuspense>
                         <Cosmetics />
+                    </DelayedSuspense>
+                )
+            },
+            {
+                path: "/chair",
+                element: (
+                    <DelayedSuspense>
+                        <Chair />
                     </DelayedSuspense>
                 )
             },

@@ -5,7 +5,7 @@ import categoryimg1 from '../../../../../assets/images/sofa.webp';
 import categoryimg2 from '../../../../../assets/images/stool.webp';
 import categoryimg3 from '../../../../../assets/images/chair.webp';
 import categoryimg4 from '../../../../../assets/images/wood-cabinet.webp';
-import categoryimg5 from '../../../../../assets/images/seating-sofa.webp';
+import categoryimg5 from '../../../../../assets/images/sitting-sofa.webp';
 import categoryimg6 from '../../../../../assets/images/chain-lemp.webp';
 import { Link } from 'react-router-dom';
 
