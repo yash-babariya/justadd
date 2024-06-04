@@ -4,7 +4,7 @@ import Aos from 'aos';
 import categoryimg1 from '../../../../../assets/images/sofa.webp';
 import categoryimg2 from '../../../../../assets/images/stool.webp';
 import categoryimg3 from '../../../../../assets/images/chair.webp';
-import categoryimg4 from '../../../../../assets/images/wood-cabinet.webp';
+import categoryimg4 from '../../../../../assets/images/wooden-cabbinet.webp';
 import categoryimg5 from '../../../../../assets/images/sitting-sofa.webp';
 import categoryimg6 from '../../../../../assets/images/chain-lemp.webp';
 import { Link } from 'react-router-dom';
@@ -14,9 +14,9 @@ export default function Featured() {
         { id: 'cat1', name: 'sofa', image: categoryimg1 },
         { id: 'cat2', name: 'stool', image: categoryimg2 },
         { id: 'cat3', name: 'chair', image: categoryimg3 },
-        { id: 'cat4', name: 'wood-cabinet', image: categoryimg4 },
-        { id: 'cat5', name: 'seating Sofa', image: categoryimg5 },
-        { id: 'cat6', name: 'chain Lemp', image: categoryimg6 },
+        { id: 'cat4', name: 'wooden-cabbinet', image: categoryimg4 },
+        { id: 'cat5', name: 'seating-sofa', image: categoryimg5 },
+        { id: 'cat6', name: 'chain-lemp', image: categoryimg6 },
     ]
     useEffect(() => {
         Aos.init({ duration: 1000, });

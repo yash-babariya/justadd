@@ -403,33 +403,35 @@ export default function Sofa() {
     }
 
     return (
-        <div className='cart' >
-            <Link to="/favcart" className="wishlist-button">
-                <FiHeart className={`icon ${animateFavIcon ? 'pulse-animation' : ''}`} />
-                <span>whishlist</span>
-            </Link>
-            <div className="container">
-                <div className="heading">
-                    <h2><GiSofa />Sofa Sets</h2>
-                </div>
-                <section>
-                    {sofas.map(item => (
-                        <div className='item'
-                            key={item.id}>
-                            <div className="item-image">
-                                <img loading="lazy" src={item.image} alt={item.name} />
-                            </div>
-                            <h3>{item.name}</h3>
-                            <div className="item-bottom">
-                                <p>price : ${item.price}</p>
-                                <div className="icons">
-                                    <FaCartPlus onClick={() => addProductToCart(item)} className='icon' />
-                                    <FiHeart onClick={() => favoriteProduct(item)} className={`icon heart-icon ${favItems.some(fav => fav.id === item.id) ? "favorite" : ""}`} />
+        <div className="sofa">
+            <div className='cart' >
+                <Link to="/favcart" className="wishlist-button">
+                    <FiHeart className={`icon ${animateFavIcon ? 'pulse-animation' : ''}`} />
+                    <span>whishlist</span>
+                </Link>
+                <div className="container">
+                    <div className="heading">
+                        <h2><GiSofa />Sofa Sets</h2>
+                    </div>
+                    <section>
+                        {sofas.map(item => (
+                            <div className='item'
+                                key={item.id}>
+                                <div className="item-image">
+                                    <img loading="lazy" src={item.image} alt={item.name} />
+                                </div>
+                                <h3>{item.name}</h3>
+                                <div className="item-bottom">
+                                    <p>price : ${item.price}</p>
+                                    <div className="icons">
+                                        <FaCartPlus onClick={() => addProductToCart(item)} className='icon' />
+                                        <FiHeart onClick={() => favoriteProduct(item)} className={`icon heart-icon ${favItems.some(fav => fav.id === item.id) ? "favorite" : ""}`} />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
-                </section>
+                        ))}
+                    </section>
+                </div>
             </div>
         </div>
     )

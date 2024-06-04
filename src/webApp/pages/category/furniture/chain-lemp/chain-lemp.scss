@@ -1,6 +1,7 @@
 @import '../../../../../styles/index.scss';
 
-.sofa {
+
+.chain-lemp {
     .cart {
         margin: 8px 0;
         padding: 32px;
@@ -9,6 +10,11 @@
 
         @media(max-width: 576px) {
             padding: 10px;
+        }
+
+
+        @media(max-width: 425px) {
+            padding: 5px;
         }
 
         .container {
@@ -42,18 +48,22 @@
 
             section {
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(5, 1fr);
                 gap: 30px;
 
 
-                @media(max-width: 1440px) {
+                @media(max-width: 1600px) {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+
+
+                @media(max-width: 1400px) {
                     grid-template-columns: repeat(3, 1fr);
                 }
 
-                @media(max-width: 1024px) {
+                @media(max-width: 900px) {
                     grid-template-columns: repeat(2, 1fr);
                 }
-
 
                 @media(max-width: 576px) {
                     grid-template-columns: 1fr;
@@ -66,7 +76,12 @@
 
                     .item-image {
                         width: 100%;
-                        height: 200px;
+                        height: 400px;
+
+
+                        @media(max-width: 1024px) {
+                            height: 300px;
+                        }
 
                         img {
                             width: 100%;
