@@ -12,8 +12,8 @@
 
 
     .logo-container {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -22,29 +22,51 @@
         background-color: var(--theme-white-background);
         box-shadow: 0px 0px 1px 1px #0000001a;
 
+        @media (max-width: 768px) {
+            width: 100px;
+            height: 100px;
+        }
+
+        @media (max-width: 425px) {
+            width: 80px;
+            height: 80px;
+        }
+
         &.circle {
             border-radius: 50%;
             box-shadow: 0px 0px 1px 1px #0000001a;
         }
 
         &.pulse {
-            animation: pulse-animation 2s infinite;
+            animation: pulse-animation 2s infinite ease-in-out;
         }
 
 
         .logo {
-            width: 120px;
+            width: 100px;
             height: auto;
             object-fit: cover;
+
+            @media (max-width: 768px) {
+                width: 80px;
+            }
+
+            @media (max-width: 425px) {
+                width: 60px;
+            }
         }
 
         @keyframes pulse-animation {
             0% {
-                box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 0 0 0px rgba(233, 65, 124, 1);
+            }
+
+            50% {
+                box-shadow: 0 0 0 20px rgba(233, 65, 124, 1);
             }
 
             100% {
-                box-shadow: 0 0 0 50px rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 40px rgba(233, 65, 124, 1);
             }
         }
     }

@@ -1,11 +1,11 @@
 import React from 'react';
 import './cosmeticCategory.scss'
-import pic1 from '../../../../../assets/images/grid-face.jpg';
-import pic2 from '../../../../../assets/images/grid-eye.jpg';
-import pic3 from '../../../../../assets/images/grid-hair.jpg';
-import pic4 from '../../../../../assets/images/grid-lip.jpg';
-import pic5 from '../../../../../assets/images/grid-skin.jpg';
-import pic6 from '../../../../../assets/images/grid-nail.jpg';
+import pic1 from '../../../../../assets/images/grid-face.webp';
+import pic2 from '../../../../../assets/images/grid-eye.webp';
+import pic3 from '../../../../../assets/images/grid-hair.webp';
+import pic4 from '../../../../../assets/images/grid-lip.webp';
+import pic5 from '../../../../../assets/images/grid-skin.webp';
+import pic6 from '../../../../../assets/images/grid-nail.webp';
 import { Link } from 'react-router-dom';
 
 const products = [

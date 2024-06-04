@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import './featured.scss'
 import Aos from 'aos';
-import categoryimg1 from '../../../../../assets/images/sofa.jpg';
-import categoryimg2 from '../../../../../assets/images/stool.jpg';
-import categoryimg3 from '../../../../../assets/images/chair.jpg';
-import categoryimg4 from '../../../../../assets/images/wood-cabinet.jpg';
-import categoryimg5 from '../../../../../assets/images/seating-sofa.jpg';
-import categoryimg6 from '../../../../../assets/images/chain-lemp.jpg';
+import categoryimg1 from '../../../../../assets/images/sofa.webp';
+import categoryimg2 from '../../../../../assets/images/stool.webp';
+import categoryimg3 from '../../../../../assets/images/chair.webp';
+import categoryimg4 from '../../../../../assets/images/wood-cabinet.webp';
+import categoryimg5 from '../../../../../assets/images/seating-sofa.webp';
+import categoryimg6 from '../../../../../assets/images/chain-lemp.webp';
 import { Link } from 'react-router-dom';
 
 export default function Featured() {

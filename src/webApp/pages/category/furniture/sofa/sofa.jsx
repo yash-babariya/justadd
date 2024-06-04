@@ -1,46 +1,46 @@
 import React, { useState } from 'react'
 import { GiSofa } from "react-icons/gi";
 import './sofa.scss'
-import img1 from '../../../../../assets/images/sofa (1).jpg';
-import img2 from '../../../../../assets/images/sofa (2).jpg';
-import img3 from '../../../../../assets/images/sofa (3).jpg';
-import img4 from '../../../../../assets/images/sofa (4).jpg';
-import img5 from '../../../../../assets/images/sofa (5).jpg';
-import img6 from '../../../../../assets/images/sofa (6).jpg';
-import img7 from '../../../../../assets/images/sofa (7).jpg';
-import img8 from '../../../../../assets/images/sofa (8).jpg';
-import img9 from '../../../../../assets/images/sofa (9).jpg';
-import img10 from '../../../../../assets/images/sofa (10).jpg';
-import img11 from '../../../../../assets/images/sofa (11).jpg';
-import img12 from '../../../../../assets/images/sofa (12).jpg';
-import img13 from '../../../../../assets/images/sofa (13).jpg';
-import img14 from '../../../../../assets/images/sofa (14).jpg';
-import img15 from '../../../../../assets/images/sofa (15).jpg';
-import img16 from '../../../../../assets/images/sofa (16).jpg';
-import img17 from '../../../../../assets/images/sofa (17).jpg';
-import img18 from '../../../../../assets/images/sofa (18).jpg';
-import img19 from '../../../../../assets/images/sofa (19).jpg';
-import img20 from '../../../../../assets/images/sofa (20).jpg';
-import img21 from '../../../../../assets/images/sofa (21).jpg';
-import img22 from '../../../../../assets/images/sofa (22).jpg';
-import img23 from '../../../../../assets/images/sofa (23).jpg';
-import img24 from '../../../../../assets/images/sofa (24).jpg';
-import img25 from '../../../../../assets/images/sofa (25).jpg';
-import img26 from '../../../../../assets/images/sofa (26).jpg';
-import img27 from '../../../../../assets/images/sofa (27).jpg';
-import img28 from '../../../../../assets/images/sofa (28).jpg';
-import img29 from '../../../../../assets/images/sofa (29).jpg';
-import img30 from '../../../../../assets/images/sofa (30).jpg';
-import img31 from '../../../../../assets/images/sofa (31).jpg';
-import img32 from '../../../../../assets/images/sofa (32).jpg';
-import img33 from '../../../../../assets/images/sofa (33).jpg';
-import img34 from '../../../../../assets/images/sofa (34).jpg';
-import img35 from '../../../../../assets/images/sofa (35).jpg';
-import img36 from '../../../../../assets/images/sofa (36).jpg';
-import img37 from '../../../../../assets/images/sofa (37).jpg';
-import img38 from '../../../../../assets/images/sofa (38).jpg';
-import img39 from '../../../../../assets/images/sofa (39).jpg';
-import img40 from '../../../../../assets/images/sofa (40).jpg';
+import img1 from '../../../../../assets/images/sofa (1).webp';
+import img2 from '../../../../../assets/images/sofa (2).webp';
+import img3 from '../../../../../assets/images/sofa (3).webp';
+import img4 from '../../../../../assets/images/sofa (4).webp';
+import img5 from '../../../../../assets/images/sofa (5).webp';
+import img6 from '../../../../../assets/images/sofa (6).webp';
+import img7 from '../../../../../assets/images/sofa (7).webp';
+import img8 from '../../../../../assets/images/sofa (8).webp';
+import img9 from '../../../../../assets/images/sofa (9).webp';
+import img10 from '../../../../../assets/images/sofa (10).webp';
+import img11 from '../../../../../assets/images/sofa (11).webp';
+import img12 from '../../../../../assets/images/sofa (12).webp';
+import img13 from '../../../../../assets/images/sofa (13).webp';
+import img14 from '../../../../../assets/images/sofa (14).webp';
+import img15 from '../../../../../assets/images/sofa (15).webp';
+import img16 from '../../../../../assets/images/sofa (16).webp';
+import img17 from '../../../../../assets/images/sofa (17).webp';
+import img18 from '../../../../../assets/images/sofa (18).webp';
+import img19 from '../../../../../assets/images/sofa (19).webp';
+import img20 from '../../../../../assets/images/sofa (20).webp';
+import img21 from '../../../../../assets/images/sofa (21).webp';
+import img22 from '../../../../../assets/images/sofa (22).webp';
+import img23 from '../../../../../assets/images/sofa (23).webp';
+import img24 from '../../../../../assets/images/sofa (24).webp';
+import img25 from '../../../../../assets/images/sofa (25).webp';
+import img26 from '../../../../../assets/images/sofa (26).webp';
+import img27 from '../../../../../assets/images/sofa (27).webp';
+import img28 from '../../../../../assets/images/sofa (28).webp';
+import img29 from '../../../../../assets/images/sofa (29).webp';
+import img30 from '../../../../../assets/images/sofa (30).webp';
+import img31 from '../../../../../assets/images/sofa (31).webp';
+import img32 from '../../../../../assets/images/sofa (32).webp';
+import img33 from '../../../../../assets/images/sofa (33).webp';
+import img34 from '../../../../../assets/images/sofa (34).webp';
+import img35 from '../../../../../assets/images/sofa (35).webp';
+import img36 from '../../../../../assets/images/sofa (36).webp';
+import img37 from '../../../../../assets/images/sofa (37).webp';
+import img38 from '../../../../../assets/images/sofa (38).webp';
+import img39 from '../../../../../assets/images/sofa (39).webp';
+import img40 from '../../../../../assets/images/sofa (40).webp';
 import { FaCartPlus } from "react-icons/fa";
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCarts, favCarts, removeFromFavCarts } from '../../../../../redux/cart/cart';
@@ -417,7 +417,7 @@ export default function Sofa() {
                         <div className='item'
                             key={item.id}>
                             <div className="item-image">
-                                <img loading="lazy" src={item.image} alt={item.name} loading='lazy' />
+                                <img loading="lazy" src={item.image} alt={item.name} />
                             </div>
                             <h3>{item.name}</h3>
                             <div className="item-bottom">
