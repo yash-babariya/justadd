@@ -15,8 +15,8 @@ export default function Featured() {
         { id: 'cat2', name: 'stool', image: categoryimg2 },
         { id: 'cat3', name: 'chair', image: categoryimg3 },
         { id: 'cat4', name: 'wood-cabinet', image: categoryimg4 },
-        { id: 'cat5', name: 'seating Sofa', image: categoryimg5 },
-        { id: 'cat6', name: 'chain Lemp', image: categoryimg6 },
+        { id: 'cat5', name: 'sitting-sofa', image: categoryimg5 },
+        { id: 'cat6', name: 'chain-lemp', image: categoryimg6 },
     ]
     useEffect(() => {
         Aos.init({ duration: 1000, });

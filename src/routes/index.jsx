@@ -3,7 +3,8 @@ import { Navigate, createBrowserRouter } from 'react-router-dom';
 import DefaultLayout from './DefaultLayout';
 import Error from '../webApp/componets/error/componets';
 import DelayedSuspense from '../webApp/common/loader/DelayedSuspense/DelayedSuspense';
-
+import Stool from '../webApp/pages/category/furniture/stool/stool';
+import SittingSofa from '../webApp/pages/category/furniture/sitting-sofa/sitting-sofa';
 
 // Lazy load components
 const Home = lazy(() => import('../webApp/pages/home/home'));
@@ -77,6 +78,22 @@ const router = createBrowserRouter([
                 element: (
                     <DelayedSuspense>
                         <Sofa />
+                    </DelayedSuspense>
+                )
+            },
+            {
+                path: "/stool",
+                element: (
+                    <DelayedSuspense>
+                        <Stool />
+                    </DelayedSuspense>
+                )
+            },
+            {
+                path: "/sitting-sofa",
+                element: (
+                    <DelayedSuspense>
+                        <SittingSofa />
                     </DelayedSuspense>
                 )
             },
