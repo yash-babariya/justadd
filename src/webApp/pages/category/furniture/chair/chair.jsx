@@ -26,6 +26,7 @@ import { FiHeart } from 'react-icons/fi';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCarts, favCarts, removeFromFavCarts } from '../../../../../redux/cart/cart';
 import { PiOfficeChairFill } from "react-icons/pi";
+import toast from 'react-hot-toast';
 
 
 const chairs = [
