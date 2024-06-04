@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './face.scss';
-import faceimg from '../../../../../../assets/images/grid-face.jpg';
+import faceimg from '../../../../../../assets/images/grid-face.webp';
 import faceProduct1 from '../../../../../../assets/images/face-ABSOLUTE FACE STYLIST BLUSH DUOS-1.webp';
 import faceProduct2 from '../../../../../../assets/images/face-GLITTERATI FACE PALETTE-2.webp';
 import faceProduct3 from '../../../../../../assets/images/face-FACELIFT FOUNDATION STICK-3.webp';
