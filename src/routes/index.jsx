@@ -6,6 +6,7 @@ import DelayedSuspense from '../webApp/common/loader/DelayedSuspense/DelayedSusp
 import Stool from '../webApp/pages/category/furniture/stool/stool';
 import SittingSofa from '../webApp/pages/category/furniture/sitting-sofa/sitting-sofa';
 
+
 // Lazy load components
 const Home = lazy(() => import('../webApp/pages/home/home'));
 const Login = lazy(() => import('../webApp/pages/form/login/login'));
@@ -19,6 +20,8 @@ const FavCart = lazy(() => import('../webApp/pages/favcart/favcart'));
 const Cosmetics = lazy(() => import('../webApp/pages/category/cosmetics/cosmetics'));
 const Face = lazy(() => import('../webApp/pages/category/cosmetics/categorys/face/face'));
 const Chair = lazy(() => import('../webApp/pages/category/furniture/chair/chair'));
+const ChainLemp = lazy(() => import('../webApp/pages/category/furniture/chain-lemp/chain-lemp'));
+const WoodenCabbinet = lazy(() => import('../webApp/pages/category/furniture/wooden-cabbinet/wooden-cabbinet'));
 
 const router = createBrowserRouter([
     {
@@ -82,18 +85,32 @@ const router = createBrowserRouter([
                 )
             },
             {
+<<<<<<< HEAD
                 path: "/stool",
                 element: (
                     <DelayedSuspense>
                         <Stool />
+=======
+                path: "/chain-lemp",
+                element: (
+                    <DelayedSuspense>
+                        <ChainLemp />
+>>>>>>> 9d8f4cc3d1eaad8e2fb768a30951db06eeb95af9
                     </DelayedSuspense>
                 )
             },
             {
+<<<<<<< HEAD
                 path: "/sitting-sofa",
                 element: (
                     <DelayedSuspense>
                         <SittingSofa />
+=======
+                path: "/wooden-cabbinet",
+                element: (
+                    <DelayedSuspense>
+                        <WoodenCabbinet />
+>>>>>>> 9d8f4cc3d1eaad8e2fb768a30951db06eeb95af9
                     </DelayedSuspense>
                 )
             },
