@@ -47,12 +47,12 @@
                 gap: 30px;
 
 
-                @media(max-width: 1520px) {
+                @media(max-width: 1400px) {
                     grid-template-columns: repeat(4, 1fr);
                 }
 
 
-                @media(max-width: 1440px) {
+                @media(max-width: 1200px) {
                     grid-template-columns: repeat(3, 1fr);
                 }
 
