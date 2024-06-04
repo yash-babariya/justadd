@@ -39,7 +39,7 @@ export default function Herobanner() {
                     </nav>
                 </article>
                 <div className="hero-img">
-                    <img src={imageSrc} alt="Featured Sofa" width={"100%"} height={"100%"} />
+                    <img loading="lazy" src={imageSrc} alt="Featured Sofa" width={"100%"} height={"100%"} />
                 </div>
             </section>
         </header>

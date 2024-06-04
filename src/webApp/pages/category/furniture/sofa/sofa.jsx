@@ -417,7 +417,7 @@ export default function Sofa() {
                         <div className='item'
                             key={item.id}>
                             <div className="item-image">
-                                <img src={item.image} alt={item.name} loading='lazy' />
+                                <img loading="lazy" src={item.image} alt={item.name} loading='lazy' />
                             </div>
                             <h3>{item.name}</h3>
                             <div className="item-bottom">

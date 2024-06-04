@@ -35,7 +35,7 @@ export default function Featured() {
                                 <div data-aos="fade-up">
                                     <div className={`grid-item ${category.id}`}>
                                         <div className="category-img">
-                                            <img src={category.image} alt={category.name} />
+                                            <img loading="lazy" src={category.image} alt={category.name} />
                                         </div>
                                         <h3>{category.name}</h3>
                                     </div>

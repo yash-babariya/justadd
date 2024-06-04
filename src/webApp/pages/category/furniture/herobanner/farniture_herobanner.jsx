@@ -24,7 +24,7 @@ function Cart({ product, closeCart }) {
                 <RiCloseCircleFill />
             </button>
             <figure>
-                <img src={product.image} alt={product.name} />
+                <img loading="lazy" src={product.image} alt={product.name} />
                 <figcaption>
                     <h5>{product.name}</h5>
                     <p>${product.price}</p>

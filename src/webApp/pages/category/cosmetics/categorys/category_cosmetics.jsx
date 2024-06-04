@@ -33,7 +33,7 @@ export default function CosmeticCategory() {
                             products.map(product => (
                                 <Link to={`/${product.name}`} key={product.id} className={`grid-item item${product.id}`}>
                                     <div className="category-img">
-                                        <img src={product.image} alt={product.name} />
+                                        <img loading="lazy" src={product.image} alt={product.name} />
                                     </div>
                                     <h3>{product.name}</h3>
                                 </Link>

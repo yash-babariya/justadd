@@ -120,7 +120,7 @@ export default function Face() {
             <div className="container">
                 <section>
                     <div className="heading">
-                        <img src={faceimg} alt="face-pic" />
+                        <img loading="lazy" src={faceimg} alt="face-pic" />
                         <h2>Face</h2>
                     </div>
 
@@ -132,7 +132,7 @@ export default function Face() {
                                         <FiHeart onClick={() => favoriteProduct(product)} className={`icon heart-icon ${favItems.some(fav => fav.id === product.id) ? "favorite" : ""}`} />
                                     </div>
                                     <div className="category-img">
-                                        <img src={product.image} alt={product.name} />
+                                        <img loading="lazy" src={product.image} alt={product.name} />
                                     </div>
                                     <h3>{product.name}</h3>
                                     <p>price: ${product.price}</p>

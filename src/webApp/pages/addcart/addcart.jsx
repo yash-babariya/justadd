@@ -44,7 +44,7 @@ export default function AddCart() {
                             cartItems.map(item => (
                                 <div className='cart-items' key={item.id}>
                                     <div className="cart-img">
-                                        <img src={item.image} alt={item.name} />
+                                        <img loading="lazy" src={item.image} alt={item.name} />
                                     </div>
                                     <div className="details">
                                         <h3>{item.name}</h3>

@@ -1,27 +1,39 @@
-import { Navigate, createBrowserRouter } from "react-router-dom";
-import DefaultLayout from "./DefaultLayout";
-import Home from "../webApp/pages/home/home";
-import Login from "../webApp/pages/form/login/login";
-import SignUp from "../webApp/pages/form/signUp/signup";
-import Profile from "../webApp/pages/profile/profile";
-import Furniture from "../webApp/pages/category/furniture/furniture";
-import Sofa from "../webApp/pages/category/furniture/sofa/sofa";
-import AddCart from "../webApp/pages/addcart/addcart";
-import Shop from "../webApp/pages/shop/shop";
-import FavCart from "../webApp/pages/favcart/favcart";
-import Cosmetics from "../webApp/pages/category/cosmetics/cosmetics";
-import Face from "../webApp/pages/category/cosmetics/categorys/face/face";
-import Error from "../webApp/componets/error/componets";
+import React, { lazy } from 'react';
+import { Navigate, createBrowserRouter } from 'react-router-dom';
+import DefaultLayout from './DefaultLayout';
+import Error from '../webApp/componets/error/componets';
+import DelayedSuspense from '../webApp/common/loader/DelayedSuspense/DelayedSuspense';
 
+
+// Lazy load components
+const Home = lazy(() => import('../webApp/pages/home/home'));
+const Login = lazy(() => import('../webApp/pages/form/login/login'));
+const SignUp = lazy(() => import('../webApp/pages/form/signUp/signup'));
+const Profile = lazy(() => import('../webApp/pages/profile/profile'));
+const Furniture = lazy(() => import('../webApp/pages/category/furniture/furniture'));
+const Sofa = lazy(() => import('../webApp/pages/category/furniture/sofa/sofa'));
+const AddCart = lazy(() => import('../webApp/pages/addcart/addcart'));
+const Shop = lazy(() => import('../webApp/pages/shop/shop'));
+const FavCart = lazy(() => import('../webApp/pages/favcart/favcart'));
+const Cosmetics = lazy(() => import('../webApp/pages/category/cosmetics/cosmetics'));
+const Face = lazy(() => import('../webApp/pages/category/cosmetics/categorys/face/face'));
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: localStorage.getItem('IsSignUp') === 'true' ? <Navigate to="/login" /> : <SignUp />
+        element: localStorage.getItem('IsSignUp') === 'true' ? <Navigate to="/login" /> : (
+            <DelayedSuspense>
+                <SignUp />
+            </DelayedSuspense>
+        )
     },
     {
         path: "/login",
-        element: localStorage.getItem('IsLogin') === 'true' ? <Navigate to="/home" /> : <Login />
+        element: localStorage.getItem('IsLogin') === 'true' ? <Navigate to="/home" /> : (
+            <DelayedSuspense>
+                <Login />
+            </DelayedSuspense>
+        )
     },
     {
         path: "/",
@@ -29,39 +41,75 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/home",
-                element: <Home />
+                element: (
+                    <DelayedSuspense>
+                        <Home />
+                    </DelayedSuspense>
+                )
             },
             {
                 path: "/furniture",
-                element: <Furniture />
+                element: (
+                    <DelayedSuspense>
+                        <Furniture />
+                    </DelayedSuspense>
+                )
             },
             {
                 path: '/cosmetics',
-                element: <Cosmetics />
+                element: (
+                    <DelayedSuspense>
+                        <Cosmetics />
+                    </DelayedSuspense>
+                )
             },
             {
                 path: "/sofa",
-                element: <Sofa />
+                element: (
+                    <DelayedSuspense>
+                        <Sofa />
+                    </DelayedSuspense>
+                )
             },
             {
                 path: "/shop",
-                element: <Shop />
+                element: (
+                    <DelayedSuspense>
+                        <Shop />
+                    </DelayedSuspense>
+                )
             },
             {
                 path: 'addCart',
-                element: <AddCart />
+                element: (
+                    <DelayedSuspense>
+                        <AddCart />
+                    </DelayedSuspense>
+                )
             },
             {
                 path: "/profile",
-                element: <Profile />
+                element: (
+                    <DelayedSuspense>
+                        <Profile />
+                    </DelayedSuspense>
+                )
             },
             {
                 path: "/favcart",
-                element: <FavCart />
+                element: (
+                    <DelayedSuspense>
+                        <FavCart />
+                    </DelayedSuspense>
+                )
             },
             {
                 path: "/face",
-                element: <Face />
+                element: (
+                    <DelayedSuspense>
+                        <Face />
+                    </DelayedSuspense>
+                )
             }
         ]
     },
@@ -69,6 +117,6 @@ const router = createBrowserRouter([
         path: "*",
         element: <Error />
     }
-])
+]);
 
 export default router;

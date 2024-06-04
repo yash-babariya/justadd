@@ -15,7 +15,7 @@ export default function FavCart() {
                         favItems.map(item => (
                             <div className="fav-cart-items" key={item.id}>
                                 <div className="cart-img">
-                                    <img src={item.image} alt={item.name} />
+                                    <img loading="lazy" src={item.image} alt={item.name} />
                                 </div>
                                 <h3>{item.name}</h3>
                                 <p>${item.price}</p>

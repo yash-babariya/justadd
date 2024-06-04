@@ -79,7 +79,7 @@ export default function SignUp() {
     return (
         <div className="user">
             <div className="logo">
-                <img src={logo} alt="logo" />
+                <img loading="lazy" src={logo} alt="logo" />
             </div>
             <div className="form">
                 <div className="form-user">

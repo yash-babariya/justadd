@@ -69,7 +69,7 @@ export default function Header() {
                     </div>
                     <Link to={"/"}>
                         <div className="logo">
-                            <img src={logo} alt="logo" loading="lazy" />
+                            <img loading="lazy" src={logo} alt="logo" loading="lazy" />
                         </div>
                     </Link>
                     <div className="buttons">
