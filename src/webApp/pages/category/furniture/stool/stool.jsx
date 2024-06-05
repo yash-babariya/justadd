@@ -31,7 +31,7 @@ import { PiStoolFill } from "react-icons/pi";
 const stools = [
     {
         id: 1,
-        img: stool1,
+        image: stool1,
         name: "Classic Wood Stool",
         price: 50,
         size: "Small",
@@ -39,7 +39,7 @@ const stools = [
     },
     {
         id: 2,
-        img: stool2,
+        image: stool2,
         name: "Adjustable Bar Stool",
         price: 70,
         size: "Medium",
@@ -47,7 +47,7 @@ const stools = [
     },
     {
         id: 3,
-        img: stool3,
+        image: stool3,
         name: "Rustic Farmhouse Stool",
         price: 55,
         size: "Large",
@@ -55,7 +55,7 @@ const stools = [
     },
     {
         id: 4,
-        img: stool4,
+        image: stool4,
         name: "Compact Folding Stool",
         price: 45,
         size: "Small",
@@ -63,7 +63,7 @@ const stools = [
     },
     {
         id: 5,
-        img: stool5,
+        image: stool5,
         name: "Industrial Metal Stool",
         price: 60,
         size: "Medium",
@@ -71,7 +71,7 @@ const stools = [
     },
     {
         id: 6,
-        img: stool6,
+        image: stool6,
         name: "Elegant Vanity Stool",
         price: 80,
         size: "Large",
@@ -79,7 +79,7 @@ const stools = [
     },
     {
         id: 7,
-        img: stool7,
+        image: stool7,
         name: "Modern Plastic Stool",
         price: 40,
         size: "Small",
@@ -87,7 +87,7 @@ const stools = [
     },
     {
         id: 8,
-        img: stool8,
+        image: stool8,
         name: "Retro Diner Stool",
         price: 65,
         size: "Medium",
@@ -95,7 +95,7 @@ const stools = [
     },
     {
         id: 9,
-        img: stool9,
+        image: stool9,
         name: "Wicker Stool",
         price: 75,
         size: "Large",
@@ -103,7 +103,7 @@ const stools = [
     },
     {
         id: 10,
-        img: stool10,
+        image: stool10,
         name: "Children's Play Stool",
         price: 35,
         size: "Small",
@@ -111,7 +111,7 @@ const stools = [
     },
     {
         id: 11,
-        img: stool11,
+        image: stool11,
         name: "Swivel Bar Stool",
         price: 70,
         size: "Medium",
@@ -119,7 +119,7 @@ const stools = [
     },
     {
         id: 12,
-        img: stool12,
+        image: stool12,
         name: "Piano Stool",
         price: 90,
         size: "Large",
@@ -127,7 +127,7 @@ const stools = [
     },
     {
         id: 13,
-        img: stool13,
+        image: stool13,
         name: "Outdoor Patio Stool",
         price: 55,
         size: "Small",
@@ -135,7 +135,7 @@ const stools = [
     },
     {
         id: 14,
-        img: stool14,
+        image: stool14,
         name: "Luxury Leather Stool",
         price: 100,
         size: "Medium",
@@ -143,7 +143,7 @@ const stools = [
     },
     {
         id: 15,
-        img: stool15,
+        image: stool15,
         name: "Ergonomic Office Stool",
         price: 85,
         size: "Large",
@@ -151,7 +151,7 @@ const stools = [
     },
     {
         id: 16,
-        img: stool16,
+        image: stool16,
         name: "Mid-Century Modern Stool",
         price: 70,
         size: "Small",
@@ -159,7 +159,7 @@ const stools = [
     },
     {
         id: 17,
-        img: stool17,
+        image: stool17,
         name: "Bohemian Style Stool",
         price: 65,
         size: "Medium",
@@ -167,7 +167,7 @@ const stools = [
     },
     {
         id: 18,
-        img: stool18,
+        image: stool18,
         name: "Minimalist Stool",
         price: 50,
         size: "Large",
@@ -175,7 +175,7 @@ const stools = [
     },
     {
         id: 19,
-        img: stool19,
+        image: stool19,
         name: "Traditional Wooden Stool",
         price: 55,
         size: "Small",
@@ -183,7 +183,7 @@ const stools = [
     },
     {
         id: 20,
-        img: stool20,
+        image: stool20,
         name: "Vintage Bistro Stool",
         price: 60,
         size: "Medium",
@@ -239,7 +239,7 @@ export default function Stool() {
                             <div className='item'
                                 key={item.id}>
                                 <div className="item-image">
-                                    <img loading="lazy" src={item.img} alt={item.name} />
+                                    <img loading="lazy" src={item.image} alt={item.name} />
                                 </div>
                                 <h3>{item.name}</h3>
                                 <div className="item-bottom">

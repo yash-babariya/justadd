@@ -85,34 +85,37 @@ const router = createBrowserRouter([
                 )
             },
             {
-<<<<<<< HEAD
                 path: "/stool",
                 element: (
                     <DelayedSuspense>
                         <Stool />
-=======
-                path: "/chain-lemp",
-                element: (
-                    <DelayedSuspense>
-                        <ChainLemp />
->>>>>>> 9d8f4cc3d1eaad8e2fb768a30951db06eeb95af9
                     </DelayedSuspense>
                 )
             },
             {
-<<<<<<< HEAD
+                path: "/chain-lemp",
+                element: (
+                    <DelayedSuspense>
+                        <ChainLemp />
+                    </DelayedSuspense>
+                )
+            },
+            {
                 path: "/sitting-sofa",
                 element: (
                     <DelayedSuspense>
                         <SittingSofa />
-=======
+                    </DelayedSuspense>
+                )
+            },
+            {
                 path: "/wooden-cabbinet",
                 element: (
                     <DelayedSuspense>
                         <WoodenCabbinet />
->>>>>>> 9d8f4cc3d1eaad8e2fb768a30951db06eeb95af9
                     </DelayedSuspense>
                 )
+
             },
             {
                 path: "/shop",

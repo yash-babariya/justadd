@@ -14,13 +14,8 @@ export default function Featured() {
         { id: 'cat1', name: 'sofa', image: categoryimg1 },
         { id: 'cat2', name: 'stool', image: categoryimg2 },
         { id: 'cat3', name: 'chair', image: categoryimg3 },
-<<<<<<< HEAD
-        { id: 'cat4', name: 'wood-cabinet', image: categoryimg4 },
-        { id: 'cat5', name: 'sitting-sofa', image: categoryimg5 },
-=======
         { id: 'cat4', name: 'wooden-cabbinet', image: categoryimg4 },
-        { id: 'cat5', name: 'seating-sofa', image: categoryimg5 },
->>>>>>> 9d8f4cc3d1eaad8e2fb768a30951db06eeb95af9
+        { id: 'cat5', name: 'sitting-sofa', image: categoryimg5 },
         { id: 'cat6', name: 'chain-lemp', image: categoryimg6 },
     ]
     useEffect(() => {

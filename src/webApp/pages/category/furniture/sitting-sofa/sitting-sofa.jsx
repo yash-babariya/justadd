@@ -5,6 +5,7 @@ import { FiHeart } from 'react-icons/fi';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCarts, favCarts, removeFromFavCarts } from '../../../../../redux/cart/cart';
 import toast from 'react-hot-toast';
+import { MdEventSeat } from "react-icons/md";
 import sittingSofa1 from '../../../../../assets/images/sitting-sofa (1).webp';
 import sittingSofa2 from '../../../../../assets/images/sitting-sofa (2).webp';
 import sittingSofa3 from '../../../../../assets/images/sitting-sofa (3).webp';
@@ -26,6 +27,7 @@ import sittingSofa18 from '../../../../../assets/images/sitting-sofa (18).webp';
 import sittingSofa19 from '../../../../../assets/images/sitting-sofa (19).webp';
 import sittingSofa20 from '../../../../../assets/images/sitting-sofa (20).webp';
 import { Link } from 'react-router-dom';
+
 
 const sittingSofa = [
     {
@@ -230,7 +232,7 @@ export default function SittingSofa() {
                 </Link>
                 <div className="container">
                     <div className="heading">
-                        <h2>sitting sofa</h2>
+                        <h2><MdEventSeat />sitting sofa</h2>
                     </div>
                     <section>
                         {sittingSofa.map(item => (

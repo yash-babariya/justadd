@@ -13,6 +13,9 @@ export default function HerobannnerCosmetics() {
                     <p>
                         "Explore our curated collection of cosmetics crafted with care, and embark on a journey to discover your true brilliance."
                     </p>
+                    <div className="explore-button">
+                        <button className="explore-btn">Shop Now</button>
+                    </div>
                 </div>
             </section>
         </div>
