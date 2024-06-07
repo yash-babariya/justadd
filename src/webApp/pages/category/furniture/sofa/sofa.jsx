@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { GiSofa } from "react-icons/gi";
 import './sofa.scss'
-
-
 import { FaCartPlus } from "react-icons/fa";
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCarts, favCarts, removeFromFavCarts } from '../../../../../redux/cart/cart';

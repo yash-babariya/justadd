@@ -95,12 +95,16 @@
                     }
 
                     h3 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
                         text-align: center;
                         margin-top: 10px;
                         font-size: 25px;
                         color: var(--theme-pink-color);
                         font-weight: 600;
                         text-transform: capitalize;
+
                     }
 
                     .category-img {
