@@ -65,6 +65,10 @@
 
                 .item4 {
                     grid-column: span 1;
+
+                    img {
+                        object-position: top;
+                    }
                 }
 
                 .item5 {
@@ -121,11 +125,6 @@
                             object-fit: cover;
                             display: block;
                             transition: .5s ease-in-out;
-
-
-                            @media(max-width: 1024px) {
-                                object-position: top;
-                            }
                         }
                     }
                 }
@@ -224,4 +223,3 @@
         }
     }
 }
-
