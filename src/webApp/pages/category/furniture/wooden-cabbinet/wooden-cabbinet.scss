@@ -24,6 +24,7 @@
 
                 @media(max-width: 576px) {
                     padding: 10px 20px;
+
                 }
 
                 h2 {
@@ -50,12 +51,12 @@
                     grid-template-columns: repeat(3, 1fr);
                 }
 
-                @media(max-width: 1024px) {
+                @media(max-width: 1200px) {
                     grid-template-columns: repeat(2, 1fr);
                 }
 
 
-                @media(max-width: 576px) {
+                @media(max-width: 768px) {
                     grid-template-columns: 1fr;
                 }
 
