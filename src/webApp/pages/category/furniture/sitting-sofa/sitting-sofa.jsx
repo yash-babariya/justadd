@@ -3,7 +3,7 @@ import './sitting-sofa.scss';
 import { FaCartPlus } from 'react-icons/fa';
 import { FiHeart } from 'react-icons/fi';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCarts, favCarts, removeFromFavCarts } from '../../../../../redux/cart/cart';
+import { addToCarts, favCarts, removeFromCarts, removeFromFavCarts } from '../../../../../redux/cart/cart';
 import toast from 'react-hot-toast';
 import { MdEventSeat } from "react-icons/md";
 import { Link } from 'react-router-dom';
@@ -18,9 +18,9 @@ export default function SittingSofa() {
 
     const addProductToCart = (product) => {
         const isProductInCart = cartItems.some(item => item.id === product.id);
-
         if (isProductInCart) {
-            toast("This product is already in your cart.", { style: { backgroundColor: "#E8407B", color: "white" } });
+            dispatch(removeFromCarts(product));
+            toast("product removed from cart.", { style: { backgroundColor: "#E8407B", color: "white" } });
         } else {
             dispatch(addToCarts(product));
             toast("product added to cart successfully", { style: { backgroundColor: "#EEBD51", color: "black" } });
@@ -28,8 +28,14 @@ export default function SittingSofa() {
     };
 
     const favoriteProduct = (product) => {
-        const isProductInCart = favItems.some(item => item.id === product.id);
+        const isProductInCart = cartItems.some(item => item.id === product.id);
+
         if (isProductInCart) {
+            toast("Cannot add to favorites. Product is already in the cart.", { style: { backgroundColor: "#E8407B", color: "white" } });
+            return;
+        }
+        const isProductInFavs = favItems.some(item => item.id === product.id);
+        if (isProductInFavs) {
             dispatch(removeFromFavCarts(product));
             toast("Product removed from favorite list", { style: { backgroundColor: "#E8407B", color: "white" } });
         } else {
@@ -61,8 +67,10 @@ export default function SittingSofa() {
                                 <div className="item-bottom">
                                     <p>price : ${item.price}</p>
                                     <div className="icons">
-                                        <FaCartPlus onClick={() => addProductToCart(item)} className='icon' />
-                                        <FiHeart onClick={() => favoriteProduct(item)} className={`icon heart-icon ${favItems.some(fav => fav.id === item.id) ? "favorite" : ""}`} />
+                                        <div className="icons">
+                                            <FaCartPlus onClick={() => addProductToCart(item)} className={`icon  ${cartItems.some(fav => fav.id === item.id) ? "fill" : ""}`} />
+                                            <FiHeart onClick={() => favoriteProduct(item)} className={`icon  ${favItems.some(fav => fav.id === item.id) ? "fill" : ""}`} />
+                                        </div>
                                     </div>
                                 </div>
                             </div>

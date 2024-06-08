@@ -469,7 +469,7 @@ export const categories = {
         ],
         stools: [
             {
-                id: 1,
+                id: 101,
                 image: stool1,
                 name: "Classic Wood Stool",
                 price: 50,
@@ -477,7 +477,7 @@ export const categories = {
                 details: "A simple yet elegant wood stool, perfect for any kitchen or dining area. Crafted from high-quality oak with a smooth finish.",
             },
             {
-                id: 2,
+                id: 102,
                 image: stool2,
                 name: "Adjustable Bar Stool",
                 price: 70,
@@ -485,7 +485,7 @@ export const categories = {
                 details: "This bar stool features an adjustable height mechanism and a sleek, modern design. Made from durable metal and wood.",
             },
             {
-                id: 3,
+                id: 103,
                 image: stool3,
                 name: "Rustic Farmhouse Stool",
                 price: 55,
@@ -493,7 +493,7 @@ export const categories = {
                 details: "Add a rustic touch to your home with this farmhouse-style stool. Made from reclaimed wood and finished with a weathered look.",
             },
             {
-                id: 4,
+                id: 104,
                 image: stool4,
                 name: "Compact Folding Stool",
                 price: 45,
@@ -501,7 +501,7 @@ export const categories = {
                 details: "Portable and easy to store, this folding stool is perfect for extra seating when needed. Made from lightweight but strong materials.",
             },
             {
-                id: 5,
+                id: 105,
                 image: stool5,
                 name: "Industrial Metal Stool",
                 price: 60,
@@ -509,7 +509,7 @@ export const categories = {
                 details: "A sturdy and stylish metal stool with an industrial design. Ideal for modern kitchens and bars.",
             },
             {
-                id: 6,
+                id: 106,
                 image: stool6,
                 name: "Elegant Vanity Stool",
                 price: 80,
@@ -517,7 +517,7 @@ export const categories = {
                 details: "This vanity stool features plush upholstery and a wooden frame. Perfect for adding a touch of elegance to your dressing area.",
             },
             {
-                id: 7,
+                id: 107,
                 image: stool7,
                 name: "Modern Plastic Stool",
                 price: 40,
@@ -525,7 +525,7 @@ export const categories = {
                 details: "A minimalist stool made from high-quality plastic. Lightweight, durable, and easy to clean.",
             },
             {
-                id: 8,
+                id: 108,
                 image: stool8,
                 name: "Retro Diner Stool",
                 price: 65,
@@ -533,7 +533,7 @@ export const categories = {
                 details: "Bring back the 50s with this retro diner stool. Features a chrome base and a comfortable padded seat.",
             },
             {
-                id: 9,
+                id: 109,
                 image: stool9,
                 name: "Wicker Stool",
                 price: 75,
@@ -541,7 +541,7 @@ export const categories = {
                 details: "Stylish and durable, this wicker stool is perfect for both indoor and outdoor use. Made from high-quality wicker and a sturdy frame.",
             },
             {
-                id: 10,
+                id: 110,
                 image: stool10,
                 name: "Children's Play Stool",
                 price: 35,
@@ -549,7 +549,7 @@ export const categories = {
                 details: "Designed for children, this play stool is safe, sturdy, and colorful. Made from non-toxic materials.",
             },
             {
-                id: 11,
+                id: 111,
                 image: stool11,
                 name: "Swivel Bar Stool",
                 price: 70,
@@ -557,7 +557,7 @@ export const categories = {
                 details: "Perfect for your home bar or kitchen island, this swivel bar stool is made from sturdy wood and has a comfortable footrest.",
             },
             {
-                id: 12,
+                id: 112,
                 image: stool12,
                 name: "Piano Stool",
                 price: 90,
@@ -565,7 +565,7 @@ export const categories = {
                 details: "An adjustable piano stool with a cushioned seat. Provides excellent comfort and support for long playing sessions.",
             },
             {
-                id: 13,
+                id: 113,
                 image: stool13,
                 name: "Outdoor Patio Stool",
                 price: 55,
@@ -573,7 +573,7 @@ export const categories = {
                 details: "Weather-resistant and durable, this patio stool is perfect for outdoor use. Made from treated wood to withstand the elements.",
             },
             {
-                id: 14,
+                id: 114,
                 image: stool14,
                 name: "Luxury Leather Stool",
                 price: 100,
@@ -581,7 +581,7 @@ export const categories = {
                 details: "A luxurious leather stool with a padded seat and backrest. Ideal for adding a touch of elegance to any room.",
             },
             {
-                id: 15,
+                id: 115,
                 image: stool15,
                 name: "Ergonomic Office Stool",
                 price: 85,
@@ -589,7 +589,7 @@ export const categories = {
                 details: "Designed for comfort during long working hours. Features adjustable height and a swivel base.",
             },
             {
-                id: 16,
+                id: 116,
                 image: stool16,
                 name: "Mid-Century Modern Stool",
                 price: 70,
@@ -597,7 +597,7 @@ export const categories = {
                 details: "This mid-century modern stool features clean lines and a wooden frame. Perfect for any stylish home or office.",
             },
             {
-                id: 17,
+                id: 117,
                 image: stool17,
                 name: "Bohemian Style Stool",
                 price: 65,
@@ -605,7 +605,7 @@ export const categories = {
                 details: "Add a bohemian flair to your space with this stool. Made from natural wood and rattan, it is both comfortable and unique.",
             },
             {
-                id: 18,
+                id: 118,
                 image: stool18,
                 name: "Minimalist Stool",
                 price: 50,
@@ -613,7 +613,7 @@ export const categories = {
                 details: "A minimalist stool with a sleek design. Made from high-quality materials and perfect for modern interiors.",
             },
             {
-                id: 19,
+                id: 119,
                 image: stool19,
                 name: "Traditional Wooden Stool",
                 price: 55,
@@ -621,7 +621,7 @@ export const categories = {
                 details: "This traditional wooden stool features intricate carvings and a comfortable seat. Ideal for classic dining rooms.",
             },
             {
-                id: 20,
+                id: 120,
                 image: stool20,
                 name: "Vintage Bistro Stool",
                 price: 60,
@@ -631,7 +631,7 @@ export const categories = {
         ],
         chairs: [
             {
-                id: 1,
+                id: 201,
                 name: 'Classic Wood Chair',
                 image: chair1,
                 price: 123,
@@ -639,7 +639,7 @@ export const categories = {
                 details: 'Handcrafted from solid oak, this chair features a timeless design and a smooth finish. Ideal for any dining room or kitchen setting.',
             },
             {
-                id: 2,
+                id: 202,
                 name: 'Modern Lounge Chair',
                 image: chair2,
                 price: 210,
@@ -647,7 +647,7 @@ export const categories = {
                 details: 'A sleek and stylish lounge chair with a minimalist design. Made from high-quality beech wood, perfect for contemporary interiors.',
             },
             {
-                id: 3,
+                id: 203,
                 name: 'Rustic Armchair',
                 image: chair3,
                 price: 350,
@@ -655,7 +655,7 @@ export const categories = {
                 details: 'This rustic armchair combines comfort with a vintage look. Crafted from reclaimed wood and upholstered in durable fabric.',
             },
             {
-                id: 4,
+                id: 204,
                 name: 'Ergonomic Office Chair',
                 image: chair4,
                 price: 250,
@@ -663,7 +663,7 @@ export const categories = {
                 details: 'Designed for maximum comfort during long working hours. Features adjustable height, lumbar support, and a swivel base.',
             },
             {
-                id: 5,
+                id: 205,
                 name: 'Outdoor Patio Chair',
                 image: chair5,
                 price: 180,
@@ -671,7 +671,7 @@ export const categories = {
                 details: 'Weather-resistant and durable, this patio chair is perfect for outdoor use. Made from treated wood to withstand the elements.',
             },
             {
-                id: 6,
+                id: 206,
                 name: 'Elegant Dining Chair',
                 image: chair6,
                 price: 190,
@@ -679,7 +679,7 @@ export const categories = {
                 details: 'Elegant and comfortable, this dining chair is upholstered in premium fabric and features a sturdy wooden frame.',
             },
             {
-                id: 7,
+                id: 207,
                 name: 'Compact Folding Chair',
                 image: chair7,
                 price: 75,
@@ -687,7 +687,7 @@ export const categories = {
                 details: 'Portable and easy to store, this folding chair is perfect for extra seating when needed. Made from lightweight but strong wood.',
             },
             {
-                id: 8,
+                id: 208,
                 name: 'Rocking Chair',
                 image: chair8,
                 price: 220,
@@ -695,7 +695,7 @@ export const categories = {
                 details: 'A classic rocking chair made from high-quality pine wood. Ideal for relaxing on the porch or in the living room.',
             },
             {
-                id: 9,
+                id: 209,
                 name: 'Children\'s Play Chair',
                 image: chair9,
                 price: 90,
@@ -703,7 +703,7 @@ export const categories = {
                 details: 'Designed for children, this play chair is safe, sturdy, and colorful. Made from non-toxic materials.',
             },
             {
-                id: 10,
+                id: 210,
                 name: 'Reclining Lounge Chair',
                 image: chair10,
                 price: 300,
@@ -711,7 +711,7 @@ export const categories = {
                 details: 'This reclining lounge chair offers ultimate comfort with its adjustable backrest and padded seat. Perfect for living rooms.',
             },
             {
-                id: 11,
+                id: 211,
                 name: 'Vintage Bistro Chair',
                 image: chair11,
                 price: 140,
@@ -719,7 +719,7 @@ export const categories = {
                 details: 'Add a touch of charm to your dining area with this vintage bistro chair. Made from wrought iron and wood.',
             },
             {
-                id: 12,
+                id: 212,
                 name: 'Wicker Chair',
                 image: chair12,
                 price: 200,
@@ -727,7 +727,7 @@ export const categories = {
                 details: 'Stylish and durable, this wicker chair is perfect for both indoor and outdoor use. Made from high-quality wicker and wood.',
             },
             {
-                id: 13,
+                id: 213,
                 name: 'Executive Office Chair',
                 image: chair13,
                 price: 275,
@@ -735,7 +735,7 @@ export const categories = {
                 details: 'A luxurious office chair with leather upholstery and wood accents. Provides excellent support and comfort for executives.',
             },
             {
-                id: 14,
+                id: 214,
                 name: 'Mid-Century Modern Chair',
                 image: chair14,
                 price: 230,
@@ -743,7 +743,7 @@ export const categories = {
                 details: 'This mid-century modern chair features clean lines and a wooden frame. Perfect for any stylish home or office.',
             },
             {
-                id: 15,
+                id: 215,
                 name: 'Bohemian Style Chair',
                 image: chair15,
                 price: 195,
@@ -751,7 +751,7 @@ export const categories = {
                 details: 'Add a bohemian flair to your space with this chair. Made from natural wood and rattan, it is both comfortable and unique.',
             },
             {
-                id: 16,
+                id: 216,
                 name: 'High Back Dining Chair',
                 image: chair16,
                 price: 180,
@@ -759,7 +759,7 @@ export const categories = {
                 details: 'Elegant high back dining chair with a cushioned seat. Made from solid wood and upholstered in premium fabric.',
             },
             {
-                id: 17,
+                id: 217,
                 name: 'Minimalist Wooden Chair',
                 image: chair17,
                 price: 160,
@@ -767,7 +767,7 @@ export const categories = {
                 details: 'A minimalist wooden chair with a sleek design. Made from high-quality oak and perfect for modern interiors.',
             },
             {
-                id: 18,
+                id: 218,
                 name: 'Traditional Wooden Chair',
                 image: chair18,
                 price: 175,
@@ -775,7 +775,7 @@ export const categories = {
                 details: 'This traditional wooden chair features intricate carvings and a comfortable seat. Ideal for classic dining rooms.',
             },
             {
-                id: 19,
+                id: 219,
                 name: 'Swivel Bar Stool',
                 image: chair19,
                 price: 130,
@@ -783,7 +783,7 @@ export const categories = {
                 details: 'Perfect for your home bar or kitchen island, this swivel bar stool is made from sturdy wood and has a comfortable footrest.',
             },
             {
-                id: 20,
+                id: 220,
                 name: 'Adirondack Chair',
                 image: chair20,
                 price: 220,
@@ -793,7 +793,7 @@ export const categories = {
         ],
         woodenCabinets: [
             {
-                id: 1,
+                id: 301,
                 image: cabinet1,
                 name: "Rustic Charm Cabinet",
                 price: 199,
@@ -801,7 +801,7 @@ export const categories = {
                 details: "This versatile wooden cabinet brings a touch of rustic charm to any space. Ideal for storing household essentials, its sturdy construction and spacious shelves ensure durability and ample storage."
             },
             {
-                id: 2,
+                id: 302,
                 image: cabinet2,
                 name: "Elegant Heritage Cabinet",
                 price: 299,
@@ -809,7 +809,7 @@ export const categories = {
                 details: "Crafted from high-quality wood, this elegant cabinet features a timeless design that complements any decor. With multiple shelves and a sleek finish, it offers both functionality and style."
             },
             {
-                id: 3,
+                id: 303,
                 image: cabinet3,
                 name: "Classic Organizer Cabinet",
                 price: 249,
@@ -817,7 +817,7 @@ export const categories = {
                 details: "Enhance your home storage with this classic wooden cabinet. Perfect for organizing your belongings, it combines durability with a stylish design that fits seamlessly into any room."
             },
             {
-                id: 4,
+                id: 304,
                 image: cabinet4,
                 name: "Spacious Elegance Cabinet",
                 price: 349,
@@ -825,7 +825,7 @@ export const categories = {
                 details: "This spacious wooden cabinet provides ample storage for all your needs. Its solid construction and elegant design make it a standout piece in any living space."
             },
             {
-                id: 5,
+                id: 305,
                 image: cabinet5,
                 name: "Compact Utility Cabinet",
                 price: 179,
@@ -833,7 +833,7 @@ export const categories = {
                 details: "Bring functionality and style to your home with this compact wooden cabinet. Ideal for smaller spaces, it offers sturdy storage without compromising on aesthetics."
             },
             {
-                id: 6,
+                id: 306,
                 image: cabinet6,
                 name: "Sophisticated Storage Cabinet",
                 price: 399,
@@ -841,7 +841,7 @@ export const categories = {
                 details: "Featuring a beautiful finish and robust construction, this large wooden cabinet is perfect for organizing larger items. Its elegant design adds a touch of sophistication to any room."
             },
             {
-                id: 7,
+                id: 307,
                 image: cabinet7,
                 name: "Mid-Century Modern Cabinet",
                 price: 279,
@@ -849,7 +849,7 @@ export const categories = {
                 details: "This mid-sized wooden cabinet combines classic style with practical storage solutions. With its durable shelves and timeless look, it's a great addition to any home."
             },
             {
-                id: 8,
+                id: 308,
                 image: cabinet8,
                 name: "Contemporary Grandeur Cabinet",
                 price: 319,
@@ -857,7 +857,7 @@ export const categories = {
                 details: "This large wooden cabinet offers a perfect blend of contemporary design and practical storage. Its spacious interior and sleek appearance make it a stylish addition to any modern home."
             },
             {
-                id: 9,
+                id: 309,
                 image: cabinet9,
                 name: "Vintage Elegance Cabinet",
                 price: 229,
@@ -865,7 +865,7 @@ export const categories = {
                 details: "Add a touch of vintage elegance to your home with this charming wooden cabinet. Its sturdy construction and classic design make it both functional and beautiful."
             },
             {
-                id: 10,
+                id: 310,
                 image: cabinet10,
                 name: "Modern Minimalist Cabinet",
                 price: 269,
@@ -873,7 +873,7 @@ export const categories = {
                 details: "This minimalist wooden cabinet is perfect for modern homes. Its sleek design and ample storage space make it a practical and stylish addition to any room."
             },
             {
-                id: 11,
+                id: 311,
                 image: cabinet11,
                 name: "Country Cottage Cabinet",
                 price: 189,
@@ -881,7 +881,7 @@ export const categories = {
                 details: "Bring the cozy charm of a country cottage into your home with this wooden cabinet. Ideal for small spaces, it provides practical storage with a rustic touch."
             },
             {
-                id: 12,
+                id: 312,
                 image: cabinet12,
                 name: "Urban Chic Cabinet",
                 price: 309,
@@ -889,7 +889,7 @@ export const categories = {
                 details: "This chic wooden cabinet blends urban style with practical storage solutions. Its modern design and sturdy construction make it a versatile piece for any living space."
             },
             {
-                id: 13,
+                id: 313,
                 image: cabinet13,
                 name: "Scandinavian Simplicity Cabinet",
                 price: 219,
@@ -897,7 +897,7 @@ export const categories = {
                 details: "Embrace Scandinavian simplicity with this sleek wooden cabinet. Its minimalist design and functional storage options make it a perfect addition to contemporary homes."
             },
             {
-                id: 14,
+                id: 314,
                 image: cabinet14,
                 name: "Industrial Loft Cabinet",
                 price: 339,
@@ -905,7 +905,7 @@ export const categories = {
                 details: "This industrial-style wooden cabinet is ideal for lofts and modern homes. Its robust construction and spacious interior provide ample storage while adding a stylish touch."
             },
             {
-                id: 15,
+                id: 315,
                 image: cabinet15,
                 name: "Coastal Breeze Cabinet",
                 price: 249,
@@ -913,7 +913,7 @@ export const categories = {
                 details: "Capture the essence of coastal living with this breezy wooden cabinet. Perfect for beach-themed interiors, it offers practical storage with a touch of seaside charm."
             },
             {
-                id: 16,
+                id: 316,
                 image: cabinet16,
                 name: "Farmhouse Classic Cabinet",
                 price: 299,
@@ -921,7 +921,7 @@ export const categories = {
                 details: "This farmhouse-style wooden cabinet combines rustic charm with modern functionality. Its spacious shelves and solid construction make it a practical and stylish addition to any home."
             },
             {
-                id: 17,
+                id: 317,
                 image: cabinet17,
                 name: "Art Deco Cabinet",
                 price: 289,
@@ -929,7 +929,7 @@ export const categories = {
                 details: "Add a touch of Art Deco elegance to your home with this stylish wooden cabinet. Its unique design and ample storage space make it a standout piece in any room."
             },
             {
-                id: 18,
+                id: 318,
                 image: cabinet18,
                 name: "Bohemian Chic Cabinet",
                 price: 199,
@@ -937,7 +937,7 @@ export const categories = {
                 details: "This bohemian-style wooden cabinet is perfect for eclectic interiors. Its colorful design and practical storage options make it a fun and functional addition to any space."
             },
             {
-                id: 19,
+                id: 319,
                 image: cabinet19,
                 name: "Traditional Grandeur Cabinet",
                 price: 359,
@@ -945,7 +945,7 @@ export const categories = {
                 details: "This traditional wooden cabinet exudes grandeur and elegance. Its spacious interior and classic design make it a perfect storage solution for formal living spaces."
             },
             {
-                id: 20,
+                id: 320,
                 image: cabinet20,
                 name: "Transitional Harmony Cabinet",
                 price: 269,
@@ -955,7 +955,7 @@ export const categories = {
         ],
         sittingSofa: [
             {
-                id: 1,
+                id: 401,
                 image: sittingSofa1,
                 name: "Modern Grey Sofa",
                 price: 300,
@@ -963,7 +963,7 @@ export const categories = {
                 details: "A sleek and modern grey sofa that fits perfectly in any contemporary living room. Made with high-quality fabric and sturdy construction.",
             },
             {
-                id: 2,
+                id: 402,
                 image: sittingSofa2,
                 name: "Classic Leather Sofa",
                 price: 500,
@@ -971,7 +971,7 @@ export const categories = {
                 details: "A luxurious leather sofa that brings a touch of elegance to your home. Features deep seating and plush cushions for maximum comfort.",
             },
             {
-                id: 3,
+                id: 403,
                 image: sittingSofa3,
                 name: "Vintage Velvet Sofa",
                 price: 400,
@@ -979,7 +979,7 @@ export const categories = {
                 details: "This vintage velvet sofa adds a touch of retro charm to any space. Soft velvet upholstery and mid-century modern design.",
             },
             {
-                id: 4,
+                id: 404,
                 image: sittingSofa4,
                 name: "Compact Sleeper Sofa",
                 price: 350,
@@ -987,7 +987,7 @@ export const categories = {
                 details: "A versatile sleeper sofa that's perfect for small spaces. Easily converts into a bed for overnight guests.",
             },
             {
-                id: 5,
+                id: 405,
                 image: sittingSofa5,
                 name: "Luxury Sectional Sofa",
                 price: 700,
@@ -995,7 +995,7 @@ export const categories = {
                 details: "An expansive sectional sofa that offers ample seating for large families. Features a chaise lounge and premium upholstery.",
             },
             {
-                id: 6,
+                id: 406,
                 image: sittingSofa6,
                 name: "Chesterfield Sofa",
                 price: 600,
@@ -1003,7 +1003,7 @@ export const categories = {
                 details: "A classic Chesterfield sofa with deep button tufting and rolled arms. Perfect for traditional or eclectic decor.",
             },
             {
-                id: 7,
+                id: 407,
                 image: sittingSofa7,
                 name: "Contemporary Blue Sofa",
                 price: 320,
@@ -1011,7 +1011,7 @@ export const categories = {
                 details: "A bright and cheerful blue sofa that adds a pop of color to your living room. Durable fabric and sleek design.",
             },
             {
-                id: 8,
+                id: 408,
                 image: sittingSofa8,
                 name: "Reclining Sofa",
                 price: 550,
@@ -1019,7 +1019,7 @@ export const categories = {
                 details: "A comfortable reclining sofa that allows you to relax in style. Features adjustable headrests and footrests.",
             },
             {
-                id: 9,
+                id: 409,
                 image: sittingSofa9,
                 name: "Scandinavian Style Sofa",
                 price: 380,
@@ -1027,7 +1027,7 @@ export const categories = {
                 details: "A minimalist Scandinavian style sofa with clean lines and neutral tones. Perfect for modern living spaces.",
             },
             {
-                id: 10,
+                id: 410,
                 image: sittingSofa10,
                 name: "Fabric Sofa with Chaise",
                 price: 450,
@@ -1035,7 +1035,7 @@ export const categories = {
                 details: "A cozy fabric sofa with a chaise lounge for extra relaxation. Soft cushions and a sturdy frame.",
             },
             {
-                id: 11,
+                id: 411,
                 image: sittingSofa11,
                 name: "Elegant White Sofa",
                 price: 400,
@@ -1043,7 +1043,7 @@ export const categories = {
                 details: "An elegant white sofa that brightens up any room. Easy to clean and maintain, with removable cushion covers.",
             },
             {
-                id: 12,
+                id: 412,
                 image: sittingSofa12,
                 name: "Convertible Futon Sofa",
                 price: 280,
@@ -1051,7 +1051,7 @@ export const categories = {
                 details: "A practical futon sofa that converts into a bed. Ideal for small apartments and guest rooms.",
             },
             {
-                id: 13,
+                id: 413,
                 image: sittingSofa13,
                 name: "Tufted Velvet Sofa",
                 price: 450,
@@ -1059,7 +1059,7 @@ export const categories = {
                 details: "A luxurious tufted velvet sofa with a glamorous look. Perfect for adding a touch of sophistication to your home.",
             },
             {
-                id: 14,
+                id: 414,
                 image: sittingSofa14,
                 name: "Bohemian Rattan Sofa",
                 price: 370,
@@ -1067,7 +1067,7 @@ export const categories = {
                 details: "A bohemian-inspired rattan sofa with natural materials. Great for creating a relaxed and inviting atmosphere.",
             },
             {
-                id: 15,
+                id: 415,
                 image: sittingSofa15,
                 name: "Linen Loveseat",
                 price: 290,
@@ -1075,7 +1075,7 @@ export const categories = {
                 details: "A comfortable linen loveseat that's perfect for cozying up with a book. Compact design for small spaces.",
             },
             {
-                id: 16,
+                id: 416,
                 image: sittingSofa16,
                 name: "Industrial Leather Sofa",
                 price: 520,
@@ -1083,7 +1083,7 @@ export const categories = {
                 details: "A rugged industrial leather sofa with a modern edge. Features metal accents and durable leather upholstery.",
             },
             {
-                id: 17,
+                id: 417,
                 image: sittingSofa17,
                 name: "Coastal Style Sofa",
                 price: 350,
@@ -1091,7 +1091,7 @@ export const categories = {
                 details: "A coastal style sofa with light blue fabric and a relaxed vibe. Perfect for beach houses and coastal decor.",
             },
             {
-                id: 18,
+                id: 418,
                 image: sittingSofa18,
                 name: "Plush Microfiber Sofa",
                 price: 310,
@@ -1099,7 +1099,7 @@ export const categories = {
                 details: "A plush microfiber sofa that's soft to the touch. Easy to clean and maintain, with a durable build.",
             },
             {
-                id: 19,
+                id: 419,
                 image: sittingSofa19,
                 name: "Minimalist Sofa",
                 price: 330,
@@ -1107,7 +1107,7 @@ export const categories = {
                 details: "A minimalist sofa with clean lines and a simple design. Perfect for modern and contemporary homes.",
             },
             {
-                id: 20,
+                id: 420,
                 image: sittingSofa20,
                 name: "Retro Print Sofa",
                 price: 360,
@@ -1117,7 +1117,7 @@ export const categories = {
         ],
         Lemps: [
             {
-                id: 1,
+                id: 51,
                 image: lemp1,
                 name: "Antique Brass Lamp",
                 price: 49,
@@ -1125,7 +1125,7 @@ export const categories = {
                 details: "An elegant lamp featuring antique brass finish, perfect for adding a touch of vintage charm to any room. The sturdy base ensures stability, while the soft glow creates a cozy ambiance."
             },
             {
-                id: 2,
+                id: 52,
                 image: lemp2,
                 name: "Modern Desk Lamp",
                 price: 35,
@@ -1133,7 +1133,7 @@ export const categories = {
                 details: "Sleek and functional, this modern desk lamp is perfect for any contemporary workspace. With adjustable height and angle, it provides focused lighting where you need it most."
             },
             {
-                id: 3,
+                id: 53,
                 image: lemp3,
                 name: "Crystal Table Lamp",
                 price: 89,
@@ -1141,7 +1141,7 @@ export const categories = {
                 details: "A luxurious table lamp adorned with sparkling crystals that reflect light beautifully. Ideal for adding a touch of glamour to your living room or bedroom."
             },
             {
-                id: 4,
+                id: 54,
                 image: lemp4,
                 name: "Rustic Wood Lamp",
                 price: 59,
@@ -1149,7 +1149,7 @@ export const categories = {
                 details: "Bring a natural, rustic feel to your home with this wooden lamp. The earthy tones and simple design make it a great addition to any rustic or farmhouse decor."
             },
             {
-                id: 5,
+                id: 55,
                 image: lemp5,
                 name: "Industrial Floor Lamp",
                 price: 120,
@@ -1157,7 +1157,7 @@ export const categories = {
                 details: "A bold industrial floor lamp with exposed bulbs and metal accents. Perfect for creating an edgy, urban look in your living space."
             },
             {
-                id: 6,
+                id: 56,
                 image: lemp6,
                 name: "Minimalist LED Lamp",
                 price: 40,
@@ -1165,7 +1165,7 @@ export const categories = {
                 details: "This minimalist LED lamp features a sleek, modern design that fits seamlessly into any decor. Energy-efficient and long-lasting, it's perfect for any room in your home."
             },
             {
-                id: 7,
+                id: 57,
                 image: lemp7,
                 name: "Vintage Edison Lamp",
                 price: 65,
@@ -1173,7 +1173,7 @@ export const categories = {
                 details: "Inspired by early 20th-century designs, this vintage Edison lamp features a unique, exposed bulb design that adds a nostalgic touch to any space."
             },
             {
-                id: 8,
+                id: 58,
                 image: lemp8,
                 name: "Ceramic Table Lamp",
                 price: 55,
@@ -1181,7 +1181,7 @@ export const categories = {
                 details: "A stylish ceramic table lamp with a beautiful glaze finish. Its classic design makes it a versatile piece that complements a variety of decor styles."
             },
             {
-                id: 9,
+                id: 59,
                 image: lemp9,
                 name: "Smart Wi-Fi Lamp",
                 price: 75,
@@ -1189,7 +1189,7 @@ export const categories = {
                 details: "This smart Wi-Fi lamp can be controlled with your smartphone or voice assistant. Customize the brightness and color to suit any mood or occasion."
             },
             {
-                id: 10,
+                id: 510,
                 image: lemp10,
                 name: "Glass Globe Lamp",
                 price: 85,
@@ -1197,7 +1197,7 @@ export const categories = {
                 details: "A stunning glass globe lamp that creates a warm, inviting glow. Its elegant design makes it a perfect accent piece for any room."
             },
             {
-                id: 11,
+                id: 511,
                 image: lemp11,
                 name: "Bamboo Lantern Lamp",
                 price: 50,
@@ -1205,7 +1205,7 @@ export const categories = {
                 details: "Add a touch of the tropics to your home with this bamboo lantern lamp. The natural materials and warm light create a relaxing atmosphere."
             },
             {
-                id: 12,
+                id: 512,
                 image: lemp12,
                 name: "Geometric Metal Lamp",
                 price: 60,
@@ -1213,7 +1213,7 @@ export const categories = {
                 details: "A modern lamp with a geometric metal frame. Its unique design and warm light make it a striking addition to any contemporary space."
             },
             {
-                id: 13,
+                id: 513,
                 image: lemp13,
                 name: "Portable LED Lamp",
                 price: 30,
@@ -1221,7 +1221,7 @@ export const categories = {
                 details: "A portable LED lamp that's perfect for reading, camping, or emergency use. Lightweight and rechargeable, it's a practical and convenient lighting solution."
             },
             {
-                id: 14,
+                id: 514,
                 image: lemp14,
                 name: "Art Deco Lamp",
                 price: 95,
@@ -1229,7 +1229,7 @@ export const categories = {
                 details: "Bring the glamour of the Art Deco era to your home with this stylish lamp. Its bold design and intricate details make it a standout piece."
             },
             {
-                id: 15,
+                id: 515,
                 image: lemp15,
                 name: "Vintage Oil Lamp",
                 price: 45,
@@ -1237,7 +1237,7 @@ export const categories = {
                 details: "A charming vintage oil lamp replica that adds a touch of nostalgia to any space. Perfect for use as a decorative piece or during power outages."
             },
             {
-                id: 16,
+                id: 516,
                 image: lemp16,
                 name: "Tiffany Style Lamp",
                 price: 110,
@@ -1245,7 +1245,7 @@ export const categories = {
                 details: "A beautiful Tiffany-style lamp with a stained glass shade. Its vibrant colors and intricate patterns make it a true work of art."
             },
             {
-                id: 17,
+                id: 517,
                 image: lemp17,
                 name: "Touch Control Lamp",
                 price: 70,
@@ -1253,7 +1253,7 @@ export const categories = {
                 details: "This modern lamp features touch control for easy operation. Adjust the brightness with a simple tap, making it perfect for any room in your home."
             },
             {
-                id: 18,
+                id: 518,
                 image: lemp18,
                 name: "Solar Powered Lamp",
                 price: 35,
@@ -1261,7 +1261,7 @@ export const categories = {
                 details: "Eco-friendly and efficient, this solar powered lamp is perfect for outdoor use. It charges during the day and provides light at night, making it ideal for patios and gardens."
             },
             {
-                id: 19,
+                id: 519,
                 image: lemp19,
                 name: "Color Changing Lamp",
                 price: 55,
@@ -1269,7 +1269,7 @@ export const categories = {
                 details: "Add some fun to your space with this color-changing lamp. It features multiple colors and modes, controlled by a remote, to suit any mood or occasion."
             },
             {
-                id: 20,
+                id: 520,
                 image: lemp20,
                 name: "Lantern Table Lamp",
                 price: 48,

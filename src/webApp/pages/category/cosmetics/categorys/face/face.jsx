@@ -18,56 +18,56 @@ import { Link } from 'react-router-dom';
 
 const faceProducts = [
     {
-        id: 101,
+        id: 1001,
         name: 'absolute face stylist blush duos',
         image: faceProduct1,
         price: 2,
         details: "Create a flawless flush with our Absolute Face Stylist Blush Duos. Featuring complementary shades for contouring and highlighting, this versatile duo adds dimension and radiance to your complexion."
     },
     {
-        id: 102,
+        id: 1002,
         name: 'glitterati face palette',
         image: faceProduct2,
         price: 4,
         details: "Elevate your makeup game with our Glitterati Face Palette. This all-in-one palette features an array of sparkling shades for eyes, cheeks, and face, allowing you to create endless dazzling looks."
     },
     {
-        id: 103,
+        id: 1003,
         name: 'facelift foundation stick',
         image: faceProduct3,
         price: 2,
         details: "Achieve a flawless complexion with our Facelift Foundation Stick. This creamy, blendable formula effortlessly evens out skin tone and provides buildable coverage for a natural-looking finish."
     },
     {
-        id: 104,
+        id: 1004,
         name: 'facelift multislayer blush stick',
         image: faceProduct4,
         price: 3,
         details: "Get a rosy glow with our Facelift Multilayer Blush Stick. This innovative stick blush features multiple layers of complementary shades for a natural flush and radiant finish."
     },
     {
-        id: 105,
+        id: 1005,
         name: 'facelift multislayer highlighter stick',
         image: faceProduct5,
         price: 5,
         details: "Illuminate your features with our Facelift Multilayer Highlighter Stick. This multi-dimensional highlighter features layers of shimmering hues to enhance your natural radiance and create a luminous glow."
     },
     {
-        id: 106,
+        id: 1006,
         name: 'facelift multislayer contour stick',
         image: faceProduct6,
         price: 3,
         details: "Define and sculpt your features with our Facelift Multilayer Contour Stick. This versatile contour stick features multiple layers of matte and shimmer shades to contour, highlight, and define your facial contours.",
     },
     {
-        id: 107,
+        id: 1007,
         name: 'absolute facelift palette 15g',
         image: faceProduct7,
         price: 2,
         details: "Achieve a flawless complexion with our Absolute Facelift Palette. This all-in-one palette features everything you need to perfect your makeup look, including foundation, concealer, and setting powder.",
     },
     {
-        id: 108,
+        id: 1008,
         name: '9 to 5 primer + matte perfect cover foundation mini',
         image: faceProduct8,
         price: 1,

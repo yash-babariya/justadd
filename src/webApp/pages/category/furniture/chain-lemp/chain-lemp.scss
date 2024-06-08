@@ -121,7 +121,9 @@
                             }
                         }
 
+
                         .icons {
+                            width: 100%;
                             display: flex;
                             justify-content: space-between;
                             gap: 20px;
@@ -129,11 +131,7 @@
                             .icon {
                                 cursor: pointer;
                                 font-size: 25px;
-                                color: var(--theme-grey-color);
-                            }
-
-
-                            .heart-icon {
+                                color: var(--theme-primary-color);
 
                                 path {
                                     transition: .3s ease-in-out;
@@ -144,7 +142,7 @@
                                     transition: .3s ease-in-out;
                                 }
 
-                                &.favorite {
+                                &.fill {
                                     color: var(--theme-primary-pink-color);
                                     fill: var(--theme-primary-pink-background);
                                     transition: .5s ease-in-out;

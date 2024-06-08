@@ -32,7 +32,7 @@ export default function AddCart() {
         <div className='cart-sec'>
             <div className="container">
                 <div className="heading">
-                    <h1><FaOpencart className='icon' />Shopping Cart</h1>
+                    <h2><FaOpencart className='icon' />Shopping Cart</h2>
                 </div>
                 <div className="add-carts">
                     {
