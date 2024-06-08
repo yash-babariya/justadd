@@ -1,0 +1,37 @@
+@import "../../../styles/index.scss";
+
+.errormain {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .error {
+        width: 70%;
+        height: 85%;
+        background-image: url(../../../assets/images/errorpage.gif);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .errorbutton {
+        
+        button {
+            cursor: pointer;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.5;
+            letter-spacing: .7px;
+            border-radius: 40px;
+            border: 3px solid transparent;
+            background-color: #006064;
+            color: #fff;
+        }
+    }
+}

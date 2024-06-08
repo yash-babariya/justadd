@@ -1,7 +1,7 @@
 import React, { lazy } from 'react';
 import { Navigate, createBrowserRouter } from 'react-router-dom';
 import DefaultLayout from './DefaultLayout';
-import Error from '../webApp/componets/error/componets';
+import Error from '../webApp/componets/error/error';
 import DelayedSuspense from '../webApp/common/loader/DelayedSuspense/DelayedSuspense';
 import Stool from '../webApp/pages/category/furniture/stool/stool';
 import SittingSofa from '../webApp/pages/category/furniture/sitting-sofa/sitting-sofa';
