@@ -22,6 +22,7 @@ const Face = lazy(() => import('../webApp/pages/category/cosmetics/categorys/fac
 const Chair = lazy(() => import('../webApp/pages/category/furniture/chair/chair'));
 const ChainLemp = lazy(() => import('../webApp/pages/category/furniture/chain-lemp/chain-lemp'));
 const WoodenCabbinet = lazy(() => import('../webApp/pages/category/furniture/wooden-cabbinet/wooden-cabbinet'));
+const Checkout = lazy(() => import('../webApp/pages/checkout/checkout'));
 
 const router = createBrowserRouter([
     {
@@ -130,6 +131,14 @@ const router = createBrowserRouter([
                 element: (
                     <DelayedSuspense>
                         <AddCart />
+                    </DelayedSuspense>
+                )
+            },
+            {
+                path: "/checkout",
+                element: (
+                    <DelayedSuspense>
+                        <Checkout />
                     </DelayedSuspense>
                 )
             },

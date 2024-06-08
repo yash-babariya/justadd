@@ -4,13 +4,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { FaOpencart } from "react-icons/fa";
 import { calculateTotalPrice, decrementItemQuantity, incrementItemQuantity, removeFromCarts } from '../../../redux/cart/cart';
 import { RiDeleteBin5Line } from "react-icons/ri";
-import { FaFileDownload } from "react-icons/fa";
-import { FaFileAlt } from "react-icons/fa";
+import { IoBagCheckOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 export default function AddCart() {
     const dispatch = useDispatch();
     const cartItems = useSelector(state => state.cart.items);
-    const totalPrice = useSelector(state => state.cart.totalPrice);
 
     useEffect(() => {
         dispatch(calculateTotalPrice());
@@ -62,39 +61,10 @@ export default function AddCart() {
                         )
                     }
                 </div>
-                <div className="heading">
-                    <h1><FaFileAlt className='icon' />Total</h1>
-                </div>
-                <div className="cart-table-container">
-                    <table className="cart-table">
-                        <thead>
-                            <tr>
-                                <th>Product</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {cartItems.map(item => (
-                                <tr key={item.id}>
-                                    <td>{item.name}</td>
-                                    <td>${item.price}</td>
-                                    <td>{item.quantity}</td>
-                                    <td>${item.price * item.quantity}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                    <div className="total">
-                        <p>Total Price: ${totalPrice}</p>
-                    </div>
-                    <div className="invoice">
-                        <button>
-                            <FaFileDownload />
-                            Download PDF
-                        </button>
-                    </div>
+                <div className="chack-out-button">
+                    <Link to="/checkout">
+                        <button>Checkout<IoBagCheckOutline /></button>
+                    </Link>
                 </div>
             </div>
         </div>
