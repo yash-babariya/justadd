@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './chair.scss';
-
 import { Link } from 'react-router-dom';
 import { FaCartPlus } from 'react-icons/fa';
 import { FiHeart } from 'react-icons/fi';
@@ -22,10 +21,10 @@ export default function Chair() {
 
         if (isProductInCart) {
             dispatch(removeFromCarts(product));
-            toast("product removed from cart.", { style: { backgroundColor: "#E8407B", color: "white" } });
+            toast.error("removed from cart");
         } else {
             dispatch(addToCarts(product));
-            toast("product added to cart successfully", { style: { backgroundColor: "#EEBD51", color: "black" } });
+            toast.success("added to cart");
         }
     };
 
@@ -33,16 +32,16 @@ export default function Chair() {
         const isProductInCart = cartItems.some(item => item.id === product.id);
 
         if (isProductInCart) {
-            toast("Cannot add to favorites. Product is already in the cart.", { style: { backgroundColor: "#E8407B", color: "white" } });
+            toast.error("Can't add item already in cart.");
             return;
         }
         const isProductInFavs = favItems.some(item => item.id === product.id);
         if (isProductInFavs) {
             dispatch(removeFromFavCarts(product));
-            toast("Product removed from favorite list", { style: { backgroundColor: "#E8407B", color: "white" } });
+            toast.error("removed from fav");
         } else {
             dispatch(favCarts(product));
-            toast("product added to favorite list successfully", { style: { backgroundColor: "#EEBD51", color: "black" } });
+            toast.success("added to fav");
             setAnimateFavIcon(true);
             setTimeout(() => setAnimateFavIcon(false), 500);
         }
