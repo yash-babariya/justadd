@@ -123,14 +123,9 @@
                                 font-size: 25px;
                                 color: var(--theme-primary-color);
 
-                                path {
-                                    transition: .3s ease-in-out;
-                                }
 
-                                &:hover {
-                                    color: var(--theme-primary-pink-color);
-                                    transition: .3s ease-in-out;
-                                }
+
+
 
                                 &.fill {
                                     color: var(--theme-primary-pink-color);
