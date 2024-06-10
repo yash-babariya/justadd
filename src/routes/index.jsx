@@ -6,7 +6,6 @@ import DelayedSuspense from '../webApp/common/loader/DelayedSuspense/DelayedSusp
 import Stool from '../webApp/pages/category/furniture/stool/stool';
 import SittingSofa from '../webApp/pages/category/furniture/sitting-sofa/sitting-sofa';
 
-
 // Lazy load components
 const Home = lazy(() => import('../webApp/pages/home/home'));
 const Login = lazy(() => import('../webApp/pages/form/login/login'));
@@ -23,6 +22,7 @@ const Chair = lazy(() => import('../webApp/pages/category/furniture/chair/chair'
 const ChainLemp = lazy(() => import('../webApp/pages/category/furniture/chain-lemp/chain-lemp'));
 const WoodenCabbinet = lazy(() => import('../webApp/pages/category/furniture/wooden-cabbinet/wooden-cabbinet'));
 const Checkout = lazy(() => import('../webApp/pages/checkout/checkout'));
+const Eyes = lazy(() => import('../webApp/pages/category/cosmetics/categorys/eyes'));
 
 const router = createBrowserRouter([
     {
@@ -66,6 +66,14 @@ const router = createBrowserRouter([
                 element: (
                     <DelayedSuspense>
                         <Cosmetics />
+                    </DelayedSuspense>
+                )
+            },
+            {
+                path: "/eyes",
+                element: (
+                    <DelayedSuspense>
+                        <Eyes />
                     </DelayedSuspense>
                 )
             },

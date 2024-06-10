@@ -143,6 +143,18 @@ import lemp17 from '../assets/images/lemp (17).webp';
 import lemp18 from '../assets/images/lemp (18).webp';
 import lemp19 from '../assets/images/lemp (19).webp';
 import lemp20 from '../assets/images/lemp (20).webp';
+
+import eye1 from '../assets/images/eyes-01-RENEE Midnight Kohl Pencil 1.5 Gm.webp';
+import eye2 from '../assets/images/eye-02-RENEE Browfill Eyebrow Pen, 1 Ml.webp'
+import eye3 from '../assets/images/eye-03-RENEE Bold 4 4-IN-1 Kajal.webp';
+import eye4 from '../assets/images/eye-04-RENEE Hard Black Kajal Pen with Sharpener 0.35gm.webp';
+import eye5 from '../assets/images/eye-05-RENEE Volumax Mascara, 10ml.webp';
+import eye6 from '../assets/images/eye-06-RENEE Eyebrow Growth Roll On 8ml.webp';
+import eye7 from '../assets/images/eye-07-RENEE Eye Glam Combo.webp';
+import eye8 from '../assets/images/eye-08-RENEE Full Volume 2-in-1 Mascara with Primer, 10ml.webp';
+import eye9 from '../assets/images/eye-09-RENEE Extreme Stay Liquid Eyeliner 4.5ml.webp'
+import eye10 from '../assets/images/eye-10-RENEE Extreme Stay Liquid Eyeliner 4.5ml.webp';
+
 export const categories = {
     furniture: {
         sofas: [
@@ -1277,6 +1289,89 @@ export const categories = {
                 details: "A modern take on a classic lantern design. This table lamp features a metal frame and glass panels, creating a cozy and inviting ambiance."
             }
         ],
-
+    },
+    cosmetics: {
+        eyes: [
+            {
+                id: 61,
+                image: eye1,
+                name: "Vintage Eye",
+                price: 20,
+                sizes: ["Small"],
+                details: "The Vintage Eye by RENEE is inspired by classic makeup looks from past eras. This versatile eye pencil can be used as a kohl liner or smudged for a smoky effect. Its creamy formula glides on smoothly, delivering intense color payoff that lasts all day. Add a touch of vintage charm to your makeup routine with the Vintage Eye pencil."
+            },
+            {
+                id: 62,
+                image: eye2,
+                name: "Browfill Eyebrow Pen",
+                price: 18,
+                sizes: ["Small", "Medium"],
+                details: "The Browfill Eyebrow Pen by RENEE offers precise application and long-lasting results. Fill, shape, and define your eyebrows effortlessly with this easy-to-use pen."
+            },
+            {
+                id: 63,
+                image: eye3,
+                name: "Bold 4 4-IN-1 Kajal",
+                price: 15,
+                sizes: ["Small"],
+                details: "The Bold 4 4-IN-1 Kajal is a versatile product that can be used as an eyeliner, kajal, eyeshadow, or brow pencil. Its creamy texture glides on smoothly, providing intense color payoff."
+            },
+            {
+                id: 64,
+                image: eye4,
+                name: "Hard Black Kajal Pen with Sharpener",
+                price: 12,
+                sizes: ["Small"],
+                details: "This Hard Black Kajal Pen by RENEE features a sharpener for precise application. Its long-lasting formula is smudge-proof and waterproof, ensuring your eye makeup stays put all day."
+            },
+            {
+                id: 65,
+                image: eye5,
+                name: "Volumax Mascara",
+                price: 25,
+                sizes: ["Medium", "Large"],
+                details: "Achieve voluminous lashes with the Volumax Mascara by RENEE. Its lightweight formula adds dramatic volume and length to your lashes without clumping or flaking."
+            },
+            {
+                id: 66,
+                image: eye6,
+                name: "Eyebrow Growth Roll On",
+                price: 30,
+                sizes: ["Small"],
+                details: "Promote healthy eyebrow growth with RENEE's Eyebrow Growth Roll On. Enriched with nourishing ingredients, this roll-on stimulates hair follicles to encourage thicker and fuller eyebrows."
+            },
+            {
+                id: 67,
+                image: eye7,
+                name: "Eye Glam Combo",
+                price: 40,
+                sizes: ["Medium", "Large"],
+                details: "The Eye Glam Combo by RENEE includes everything you need for stunning eye makeup looks. This combo features eyeliners, kajals, and mascaras for versatile and glamorous eye makeup."
+            },
+            {
+                id: 68,
+                image: eye8,
+                name: "Full Volume 2-in-1 Mascara with Primer",
+                price: 28,
+                sizes: ["Medium"],
+                details: "Get fuller and longer lashes with the Full Volume 2-in-1 Mascara by RENEE. This mascara comes with a primer to enhance lash volume and length for a dramatic eye look."
+            },
+            {
+                id: 69,
+                image: eye9,
+                name: "Extreme Stay Liquid Eyeliner",
+                price: 22,
+                sizes: ["Small", "Medium"],
+                details: "The Extreme Stay Liquid Eyeliner offers long-lasting wear that stays put all day. Perfect for creating precise and bold lines, this eyeliner ensures your eye makeup remains flawless from morning to night."
+            },
+            {
+                id: 70,
+                image: eye10,
+                name: "Extreme Stay Liquid Eyeliner",
+                price: 22,
+                sizes: ["Small", "Medium"],
+                details: "The Extreme Stay Liquid Eyeliner offers long-lasting wear that stays put all day. Perfect for creating precise and bold lines, this eyeliner ensures your eye makeup remains flawless from morning to night."
+            }
+        ]
     }
 };
