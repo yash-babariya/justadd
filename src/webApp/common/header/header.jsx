@@ -44,7 +44,7 @@ export default function Header() {
                 <div className='menu-item category' onClick={toggleDropdown} >Category<FaCaretDown /></div>
                 <div className={`dropdown-category ${dropdownOpen ? 'open' : ''}`}>
                     <Link to={'/furniture'} onClick={closeNav}>Furniture</Link>
-                    <Link to={'/cosmetics'} onClick={closeNav}>Cosmetic</Link>
+                    <Link to={'home/cosmetics'} onClick={closeNav}>Cosmetic</Link>
                     <Link to={'/electronics'} onClick={closeNav}>Electronics</Link>
                     <Link to={'/clothes'} onClick={closeNav}>Clothes</Link>
                 </div>
@@ -58,8 +58,8 @@ export default function Header() {
                         <div className="menu-items category">
                             <Link>Category</Link>
                             <div className="drop-down">
-                                <Link to={"/furniture"}>Furniture</Link>
-                                <Link to={"/cosmetics"}>Cosmetic</Link>
+                                <Link to={"/home/furniture"}>Furniture</Link>
+                                <Link to={"home/cosmetics"}>Cosmetic</Link>
                                 <Link>Electronics</Link>
                                 <Link>Clothes</Link>
                             </div>

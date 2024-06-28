@@ -54,7 +54,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/furniture",
+                path: "/home/furniture",
                 element: (
                     <DelayedSuspense>
                         <Furniture />
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: '/cosmetics',
+                path: 'home/cosmetics',
                 element: (
                     <DelayedSuspense>
                         <Cosmetics />
@@ -135,7 +135,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: 'addCart',
+                path: '/addCart',
                 element: (
                     <DelayedSuspense>
                         <AddCart />
