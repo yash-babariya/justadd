@@ -45,8 +45,6 @@ export default function Header() {
                 <div className={`dropdown-category ${dropdownOpen ? 'open' : ''}`}>
                     <Link to={'home/furniture'} onClick={closeNav}>Furniture</Link>
                     <Link to={'home/cosmetics'} onClick={closeNav}>Cosmetic</Link>
-                    <Link to={'/electronics'} onClick={closeNav}>Electronics</Link>
-                    <Link to={'/clothes'} onClick={closeNav}>Clothes</Link>
                 </div>
                 <Link className="menu-item" to={"/shop"} onClick={closeNav}>Shop</Link>
                 <Link className="menu-item" to={"/profile"} onClick={closeNav}>Profile </Link>
@@ -60,8 +58,6 @@ export default function Header() {
                             <div className="drop-down">
                                 <Link to={"/home/furniture"}>Furniture</Link>
                                 <Link to={"home/cosmetics"}>Cosmetic</Link>
-                                <Link>Electronics</Link>
-                                <Link>Clothes</Link>
                             </div>
                         </div>
                         <div className="menu-items"><Link to={"/shop"}>Shop</Link></div>

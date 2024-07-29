@@ -62,10 +62,26 @@
 
             .form-item {
                 margin: 20px;
+                position: relative;
 
                 @media (max-width: 768px) {
                     margin: 10px;
                 }
+
+                .password-icon {
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    font-size: 20px; // Adjust the font size as needed
+                    color: var(--theme-primary-color);
+
+                    @media (max-width: 768px) {
+                        font-size: 18px; // Adjust for smaller screens if necessary
+                    }
+                }
+
 
                 label {
                     font-size: 18px;

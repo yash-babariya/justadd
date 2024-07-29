@@ -4,6 +4,7 @@ import toast from 'react-hot-toast';
 import '../form.scss'
 import logo from '../../../../assets/logo/logo.png';
 import { Link } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 export default function Login() {
     const users = useSelector(state => state.user.users);
@@ -56,6 +57,12 @@ export default function Login() {
         }
     };
 
+    // Toggle password visibility
+    const [showPassword, setShowPassword] = useState(false);
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
     return (
         <div className="user">
             <div className="logo">
@@ -82,17 +89,21 @@ export default function Login() {
                     <div className="form-item">
                         <label htmlFor="password">Password</label>
                         <input
-                            id="password" // Added id for label association
+                            id="password"
                             onChange={functionOnChange}
-                            onKeyDown={handleKeyDown}
                             value={userObj.password}
-                            type="password"
+                            type={showPassword ? "text" : "password"}
                             name="password"
                             placeholder="Enter your password"
-                            autoComplete="current-password" // Added autocomplete attribute
+                            autoComplete="new-password"
                         />
+                        {showPassword ? (
+                            <FaEyeSlash onClick={togglePasswordVisibility} className="password-icon" />
+                        ) : (
+                            <FaEye onClick={togglePasswordVisibility} className="password-icon" />
+                        )}
                         <div className="forgot">
-                            <Link to="/forgot-password">Forgot Password?</Link>
+                            <Link>Forgot Password?</Link>
                         </div>
                     </div>
                     <div className="form-button">

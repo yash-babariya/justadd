@@ -6,6 +6,7 @@ import '../form.scss'
 import logo from '../../../../assets/logo/logo.png';
 import { addUser } from '../../../../redux/form/form';
 import { Link, useNavigate } from 'react-router-dom';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 export default function SignUp() {
     const navigate = useNavigate();
@@ -76,6 +77,12 @@ export default function SignUp() {
         }
     };
 
+    // Toggle password visibility
+    const [showPassword, setShowPassword] = useState(false);
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
 
     return (
         <div className="user">
@@ -101,7 +108,20 @@ export default function SignUp() {
                     </div>
                     <div className="form-item">
                         <label htmlFor="password">Password</label>
-                        <input id="password" onChange={functionOnChange} value={userObj.password} type="password" name="password" placeholder="Enter your password" autoComplete="new-password" />
+                        <input
+                            id="password"
+                            onChange={functionOnChange}
+                            value={userObj.password}
+                            type={showPassword ? "text" : "password"}
+                            name="password"
+                            placeholder="Enter your password"
+                            autoComplete="new-password"
+                        />
+                        {showPassword ? (
+                            <FaEyeSlash onClick={togglePasswordVisibility} className="password-icon" />
+                        ) : (
+                            <FaEye onClick={togglePasswordVisibility} className="password-icon" />
+                        )}
                         <div className="forgot">
                             <Link>Forgot Password?</Link>
                         </div>
