@@ -43,7 +43,7 @@ export default function Header() {
                 <Link className="menu-item" to={"/"}>Home</Link>
                 <div className='menu-item category' onClick={toggleDropdown} >Category<FaCaretDown /></div>
                 <div className={`dropdown-category ${dropdownOpen ? 'open' : ''}`}>
-                    <Link to={'/furniture'} onClick={closeNav}>Furniture</Link>
+                    <Link to={'home/furniture'} onClick={closeNav}>Furniture</Link>
                     <Link to={'home/cosmetics'} onClick={closeNav}>Cosmetic</Link>
                     <Link to={'/electronics'} onClick={closeNav}>Electronics</Link>
                     <Link to={'/clothes'} onClick={closeNav}>Clothes</Link>
