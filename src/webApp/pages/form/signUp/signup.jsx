@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
+import '../form.scss'
 import logo from '../../../../assets/logo/logo.png';
 import { addUser } from '../../../../redux/form/form';
 import { Link, useNavigate } from 'react-router-dom';
