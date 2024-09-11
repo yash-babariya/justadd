@@ -5,24 +5,23 @@ import Error from '../webApp/componets/error/error';
 import DelayedSuspense from '../webApp/common/loader/DelayedSuspense/DelayedSuspense';
 import Stool from '../webApp/pages/category/furniture/stool/stool';
 import SittingSofa from '../webApp/pages/category/furniture/sitting-sofa/sitting-sofa';
+import Home from '../webApp/pages/home/home';
+import Login from '../webApp/pages/form/login/login';
+import SignUp from '../webApp/pages/form/signUp/signup';
+import Profile from '../webApp/pages/profile/profile';
+import Furniture from '../webApp/pages/category/furniture/furniture';
+import Sofa from '../webApp/pages/category/furniture/sofa/sofa';
+import AddCart from '../webApp/pages/addcart/addcart';
+import Shop from '../webApp/pages/shop/shop';
+import FavCart from '../webApp/pages/favcart/favcart';
+import Cosmetics from '../webApp/pages/category/cosmetics/cosmetics';
+import Face from '../webApp/pages/category/cosmetics/categorys/face/face';
+import Chair from '../webApp/pages/category/furniture/chair/chair';
+import ChainLemp from '../webApp/pages/category/furniture/chain-lemp/chain-lemp';
+import WoodenCabbinet from '../webApp/pages/category/furniture/wooden-cabbinet/wooden-cabbinet';
+import Checkout from '../webApp/pages/checkout/checkout';
+import Eyes from '../webApp/pages/category/cosmetics/categorys/eyes/eyes';
 
-// Lazy load components
-const Home = lazy(() => import('../webApp/pages/home/home'));
-const Login = lazy(() => import('../webApp/pages/form/login/login'));
-const SignUp = lazy(() => import('../webApp/pages/form/signUp/signup'));
-const Profile = lazy(() => import('../webApp/pages/profile/profile'));
-const Furniture = lazy(() => import('../webApp/pages/category/furniture/furniture'));
-const Sofa = lazy(() => import('../webApp/pages/category/furniture/sofa/sofa'));
-const AddCart = lazy(() => import('../webApp/pages/addcart/addcart'));
-const Shop = lazy(() => import('../webApp/pages/shop/shop'));
-const FavCart = lazy(() => import('../webApp/pages/favcart/favcart'));
-const Cosmetics = lazy(() => import('../webApp/pages/category/cosmetics/cosmetics'));
-const Face = lazy(() => import('../webApp/pages/category/cosmetics/categorys/face/face'));
-const Chair = lazy(() => import('../webApp/pages/category/furniture/chair/chair'));
-const ChainLemp = lazy(() => import('../webApp/pages/category/furniture/chain-lemp/chain-lemp'));
-const WoodenCabbinet = lazy(() => import('../webApp/pages/category/furniture/wooden-cabbinet/wooden-cabbinet'));
-const Checkout = lazy(() => import('../webApp/pages/checkout/checkout'));
-const Eyes = lazy(() => import('../webApp/pages/category/cosmetics/categorys/eyes'));
 
 const router = createBrowserRouter([
     {
