@@ -45,7 +45,7 @@ const router = createBrowserRouter([
         element: localStorage.getItem('IsLogin') === 'true' ? <DefaultLayout /> : <Navigate to="/login" />,
         children: [
             {
-                path: "/home",
+                path: "home", // Remove extra slash before path names inside children
                 element: (
                     <DelayedSuspense>
                         <Home />
@@ -53,7 +53,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/home/furniture",
+                path: "home/furniture",
                 element: (
                     <DelayedSuspense>
                         <Furniture />
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/eyes",
+                path: "eyes",
                 element: (
                     <DelayedSuspense>
                         <Eyes />
@@ -77,7 +77,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/chair",
+                path: "chair",
                 element: (
                     <DelayedSuspense>
                         <Chair />
@@ -85,7 +85,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/sofa",
+                path: "sofa",
                 element: (
                     <DelayedSuspense>
                         <Sofa />
@@ -93,7 +93,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/stool",
+                path: "stool",
                 element: (
                     <DelayedSuspense>
                         <Stool />
@@ -101,7 +101,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/chain-lemp",
+                path: "chain-lemp",
                 element: (
                     <DelayedSuspense>
                         <ChainLemp />
@@ -109,7 +109,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/sitting-sofa",
+                path: "sitting-sofa",
                 element: (
                     <DelayedSuspense>
                         <SittingSofa />
@@ -117,7 +117,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/wooden-cabbinet",
+                path: "wooden-cabbinet",
                 element: (
                     <DelayedSuspense>
                         <WoodenCabbinet />
@@ -126,7 +126,7 @@ const router = createBrowserRouter([
 
             },
             {
-                path: "/shop",
+                path: "shop",
                 element: (
                     <DelayedSuspense>
                         <Shop />
@@ -134,7 +134,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: '/addCart',
+                path: 'addCart',
                 element: (
                     <DelayedSuspense>
                         <AddCart />
@@ -142,7 +142,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/checkout",
+                path: "checkout",
                 element: (
                     <DelayedSuspense>
                         <Checkout />
@@ -150,7 +150,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/profile",
+                path: "profile",
                 element: (
                     <DelayedSuspense>
                         <Profile />
@@ -158,7 +158,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/favcart",
+                path: "favcart",
                 element: (
                     <DelayedSuspense>
                         <FavCart />
@@ -166,7 +166,7 @@ const router = createBrowserRouter([
                 )
             },
             {
-                path: "/face",
+                path: "face",
                 element: (
                     <DelayedSuspense>
                         <Face />
@@ -182,3 +182,4 @@ const router = createBrowserRouter([
 ]);
 
 export default router;
+
