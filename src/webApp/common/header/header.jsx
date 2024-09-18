@@ -40,34 +40,24 @@ export default function Header() {
         <div className='header-main'>
             <div className={`sidenav ${isNavOpen ? 'open' : ''}`}>
                 <div className="closebtn" onClick={closeNav}>&times;</div>
-                <Link className="menu-item" to={"/"}>Home</Link>
-                <div className='menu-item category' onClick={toggleDropdown} >Category<FaCaretDown /></div>
-                <div className={`dropdown-category ${dropdownOpen ? 'open' : ''}`}>
-                    <Link to={'home/furniture'} onClick={closeNav}>Furniture</Link>
-                    <Link to={'home/cosmetics'} onClick={closeNav}>Cosmetic</Link>
-                </div>
-                <Link className="menu-item" to={"/shop"} onClick={closeNav}>Shop</Link>
+                <Link className="menu-item" to={"/"} onClick={closeNav}>Home</Link>
+                <Link className="menu-item" to={"/home/furniture"} onClick={closeNav}>Furniture</Link>
+                <Link className="menu-item" to={"home/cosmetics"} onClick={closeNav}>Cosmetic</Link>
                 <Link className="menu-item" to={"/profile"} onClick={closeNav}>Profile </Link>
             </div>
             <div className="container">
                 <header>
-                    <div className="menu">
-                        <div className="menu-items"><Link to={"/"}>Home</Link></div>
-                        <div className="menu-items category">
-                            <Link>Category</Link>
-                            <div className="drop-down">
-                                <Link to={"/home/furniture"}>Furniture</Link>
-                                <Link to={"home/cosmetics"}>Cosmetic</Link>
-                            </div>
-                        </div>
-                        <div className="menu-items"><Link to={"/shop"}>Shop</Link></div>
-                        <div className="menu-items"><Link to={"/profile"}>Profile</Link></div>
-                    </div>
                     <Link to={"/"}>
                         <div className="logo">
                             <img loading="lazy" src={logo} alt="logo" />
                         </div>
                     </Link>
+                    <div className="menu">
+                        <div className="menu-items"><Link to={"/"}>Home</Link></div>
+                        <div className="menu-items"><Link to={"/home/furniture"}>Furniture</Link> </div>
+                        <div className="menu-items"> <Link to={"home/cosmetics"}>Cosmetic</Link></div>
+                        <div className="menu-items"><Link to={"/profile"}>Profile</Link></div>
+                    </div>
                     <div className="buttons">
                         <div className="login">
                             <HiUserCircle className='icon' />

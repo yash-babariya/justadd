@@ -63,6 +63,7 @@ export default function Login() {
         setShowPassword(!showPassword);
     };
 
+
     return (
         <div className="user">
             <div className="logo">
@@ -91,6 +92,7 @@ export default function Login() {
                         <input
                             id="password"
                             onChange={functionOnChange}
+                            onKeyDown={handleKeyDown}
                             value={userObj.password}
                             type={showPassword ? "text" : "password"}
                             name="password"

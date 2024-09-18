@@ -1,8 +1,7 @@
-// SignUp.js
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
-import '../form.scss'
+import '../form.scss';
 import logo from '../../../../assets/logo/logo.png';
 import { addUser } from '../../../../redux/form/form';
 import { Link, useNavigate } from 'react-router-dom';
@@ -21,22 +20,20 @@ export default function SignUp() {
     const functionOnChange = (e) => {
         setUserObj({ ...userObj, [e.target.name]: e.target.value });
     };
+
     const validate = () => {
         const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
-        // Check if all required fields are filled
         if (!userObj.name || !userObj.surname || !userObj.email || !userObj.password) {
             toast.error("Please fill out all fields");
             return false;
         }
 
-        // Check for a valid email
         if (!emailRegex.test(userObj.email)) {
             toast.error("Please enter a valid email");
             return false;
         }
 
-        // Detailed password checks
         if (userObj.password.length < 8) {
             toast.error("Password must be at least 8 characters long.");
             return false;
@@ -58,10 +55,8 @@ export default function SignUp() {
             return false;
         }
 
-        // If all checks pass
         return true;
     };
-
 
     const handleSignUp = () => {
         if (validate()) {
@@ -77,34 +72,63 @@ export default function SignUp() {
         }
     };
 
-    // Toggle password visibility
     const [showPassword, setShowPassword] = useState(false);
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
 
+    // Handle Enter key press
+    const handleKeyPress = (e) => {
+        if (e.key === "Enter") {
+            handleSignUp();
+        }
+    };
 
     return (
         <div className="user">
             <div className="logo">
                 <img loading="lazy" src={logo} alt="logo" />
             </div>
-            <div className="form">
+            <div className="form" onKeyDown={handleKeyPress}>
                 <div className="form-user">
                     <div className="heading">
                         <h2>Sign Up</h2>
                     </div>
                     <div className="form-item">
                         <label htmlFor="name">Name</label>
-                        <input id="name" onChange={functionOnChange} value={userObj.name} type="text" name="name" placeholder="Enter your name" autoComplete="name" />
+                        <input
+                            id="name"
+                            onChange={functionOnChange}
+                            value={userObj.name}
+                            type="text"
+                            name="name"
+                            placeholder="Enter your name"
+                            autoComplete="name"
+                        />
                     </div>
                     <div className="form-item">
                         <label htmlFor="surname">Surname</label>
-                        <input id="surname" onChange={functionOnChange} value={userObj.surname} type="text" name="surname" placeholder="Enter your surname" autoComplete="family-name" />
+                        <input
+                            id="surname"
+                            onChange={functionOnChange}
+                            value={userObj.surname}
+                            type="text"
+                            name="surname"
+                            placeholder="Enter your surname"
+                            autoComplete="family-name"
+                        />
                     </div>
                     <div className="form-item">
                         <label htmlFor="email">Email</label>
-                        <input id="email" onChange={functionOnChange} value={userObj.email} type="email" name="email" placeholder="Enter your email" autoComplete="email" />
+                        <input
+                            id="email"
+                            onChange={functionOnChange}
+                            value={userObj.email}
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autoComplete="email"
+                        />
                     </div>
                     <div className="form-item">
                         <label htmlFor="password">Password</label>

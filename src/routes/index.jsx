@@ -12,7 +12,6 @@ import Profile from '../webApp/pages/profile/profile.jsx';
 import Furniture from '../webApp/pages/category/furniture/furniture.jsx';
 import Sofa from '../webApp/pages/category/furniture/sofa/sofa.jsx';
 import AddCart from '../webApp/pages/addcart/addcart.jsx';
-import Shop from '../webApp/pages/shop/shop.jsx';
 import FavCart from '../webApp/pages/favcart/favcart.jsx';
 import Cosmetics from '../webApp/pages/category/cosmetics/cosmetics.jsx';
 import Face from '../webApp/pages/category/cosmetics/categorys/face/face.jsx';
@@ -124,14 +123,6 @@ const router = createBrowserRouter([
                     </DelayedSuspense>
                 )
 
-            },
-            {
-                path: "shop",
-                element: (
-                    <DelayedSuspense>
-                        <Shop />
-                    </DelayedSuspense>
-                )
             },
             {
                 path: 'addCart',
