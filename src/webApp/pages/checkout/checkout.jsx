@@ -31,7 +31,7 @@ export default function Checkout() {
             tableRows.push(itemData);
         });
 
-        doc.autoTable(tableColumn, tableRows, { startY: 20 });
+        doc.autoTable(tableColumn, tableRows, { startY: 20, headStyles: { fillColor: [233, 65, 124] } });
         doc.text(`Total Price: $${totalPrice}`, 14, doc.autoTable.previous.finalY + 10);
         doc.save('invoice.pdf');
     };
