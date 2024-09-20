@@ -66,7 +66,7 @@ export default function Eyes() {
                                 </div>
                                 <h3>{item.name}</h3>
                                 <div className="item-bottom">
-                                    <p>price : ${item.price}</p>
+                                    <p>Rs.{item.price}</p>
                                     <div className="icons">
                                         <FaCartPlus onClick={() => addProductToCart(item)} className={`icon  ${cartItems.some(fav => fav.id === item.id) ? "fill" : ""}`} />
                                         <FiHeart onClick={() => favoriteProduct(item)} className={`icon  ${favItems.some(fav => fav.id === item.id) ? "fill" : ""}`} />

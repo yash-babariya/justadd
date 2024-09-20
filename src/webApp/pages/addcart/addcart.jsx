@@ -48,7 +48,7 @@ export default function AddCart() {
                                     <div className="details">
                                         <h3>{item.name}</h3>
                                         <h4>{item.details}</h4>
-                                        <p>Price: ${item.price}</p>
+                                        <p>Rs.{item.price}</p>
                                         <div className="actions">
                                             <button onClick={() => handleIncrement(item)}>+</button>
                                             <p>Quantity: {item.quantity}</p>

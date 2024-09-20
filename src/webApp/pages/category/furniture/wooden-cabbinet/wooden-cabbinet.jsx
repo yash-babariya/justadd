@@ -68,9 +68,9 @@ export default function WoodenCabbinet() {
                                 <div className="item-image">
                                     <img loading="lazy" src={item.image} alt={item.name} />
                                 </div>
-                                <h3>{item.name}</h3>
                                 <div className="item-bottom">
-                                    <p>price : ${item.price}</p>
+                                    <h3>{item.name}</h3>
+                                    <p>Rs.{item.price}</p>
                                     <div className="icons">
                                         <div className="icons">
                                             <FaCartPlus onClick={() => addProductToCart(item)} className={`icon  ${cartItems.some(fav => fav.id === item.id) ? "fill" : ""}`} />

@@ -58,7 +58,7 @@ export default function FavCart() {
                                 </div>
                                 <div className="fav-details">
                                     <h3>{item.name}</h3>
-                                    <p>${item.price}</p>
+                                    <p>Rs.{item.price}</p>
                                 </div>
                             </div>
                         ))

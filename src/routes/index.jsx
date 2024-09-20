@@ -2,7 +2,6 @@ import React from 'react';
 import { Navigate, createBrowserRouter } from 'react-router-dom';
 import DefaultLayout from './DefaultLayout.jsx';
 import Error from '../webApp/componets/error/error.jsx';
-import DelayedSuspense from '../webApp/common/loader/DelayedSuspense/DelayedSuspense.jsx';
 import Stool from '../webApp/pages/category/furniture/stool/stool.jsx';
 import SittingSofa from '../webApp/pages/category/furniture/sitting-sofa/sitting-sofa.jsx';
 import Home from '../webApp/pages/home/home.jsx';
@@ -25,144 +24,75 @@ import Eyes from '../webApp/pages/category/cosmetics/categorys/eyes/index.jsx';
 const router = createBrowserRouter([
     {
         path: "/",
-        element: localStorage.getItem('IsSignUp') === 'true' ? <Navigate to="/login" /> : (
-            <DelayedSuspense>
-                <SignUp />
-            </DelayedSuspense>
-        )
+        element: localStorage.getItem('IsSignUp') === 'true' ? <Navigate to="/login" /> : <SignUp />
     },
     {
         path: "/login",
-        element: localStorage.getItem('IsLogin') === 'true' ? <Navigate to="/home" /> : (
-            <DelayedSuspense>
-                <Login />
-            </DelayedSuspense>
-        )
+        element: localStorage.getItem('IsLogin') === 'true' ? <Navigate to="/home" /> : <Login />
     },
     {
         path: "/",
         element: localStorage.getItem('IsLogin') === 'true' ? <DefaultLayout /> : <Navigate to="/login" />,
         children: [
             {
-                path: "home", // Remove extra slash before path names inside children
-                element: (
-                    <DelayedSuspense>
-                        <Home />
-                    </DelayedSuspense>
-                )
+                path: "home",
+                element: <Home />
             },
             {
                 path: "home/furniture",
-                element: (
-                    <DelayedSuspense>
-                        <Furniture />
-                    </DelayedSuspense>
-                )
+                element: <Furniture />
             },
             {
                 path: 'home/cosmetics',
-                element: (
-                    <DelayedSuspense>
-                        <Cosmetics />
-                    </DelayedSuspense>
-                )
+                element: <Cosmetics />
             },
             {
                 path: "eyes",
-                element: (
-                    <DelayedSuspense>
-                        <Eyes />
-                    </DelayedSuspense>
-                )
+                element: <Eyes />
             },
             {
                 path: "chair",
-                element: (
-                    <DelayedSuspense>
-                        <Chair />
-                    </DelayedSuspense>
-                )
+                element: <Chair />
             },
             {
                 path: "sofa",
-                element: (
-                    <DelayedSuspense>
-                        <Sofa />
-                    </DelayedSuspense>
-                )
+                element: <Sofa />
             },
             {
                 path: "stool",
-                element: (
-                    <DelayedSuspense>
-                        <Stool />
-                    </DelayedSuspense>
-                )
+                element: <Stool />
             },
             {
-                path: "chain-lemp",
-                element: (
-                    <DelayedSuspense>
-                        <ChainLemp />
-                    </DelayedSuspense>
-                )
+                path: "chain-lamp",
+                element: <ChainLemp />
             },
             {
                 path: "sitting-sofa",
-                element: (
-                    <DelayedSuspense>
-                        <SittingSofa />
-                    </DelayedSuspense>
-                )
+                element: <SittingSofa />
             },
             {
                 path: "wooden-cabbinet",
-                element: (
-                    <DelayedSuspense>
-                        <WoodenCabbinet />
-                    </DelayedSuspense>
-                )
-
+                element: <WoodenCabbinet />
             },
             {
                 path: 'addCart',
-                element: (
-                    <DelayedSuspense>
-                        <AddCart />
-                    </DelayedSuspense>
-                )
+                element: <AddCart />
             },
             {
                 path: "checkout",
-                element: (
-                    <DelayedSuspense>
-                        <Checkout />
-                    </DelayedSuspense>
-                )
+                element: <Checkout />
             },
             {
                 path: "profile",
-                element: (
-                    <DelayedSuspense>
-                        <Profile />
-                    </DelayedSuspense>
-                )
+                element: <Profile />
             },
             {
                 path: "favcart",
-                element: (
-                    <DelayedSuspense>
-                        <FavCart />
-                    </DelayedSuspense>
-                )
+                element: <FavCart />
             },
             {
                 path: "face",
-                element: (
-                    <DelayedSuspense>
-                        <Face />
-                    </DelayedSuspense>
-                )
+                element: <Face />
             }
         ]
     },

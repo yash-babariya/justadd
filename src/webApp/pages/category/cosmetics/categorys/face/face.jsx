@@ -121,7 +121,7 @@ export default function Face() {
                 <section>
                     <div className="heading">
                         <img loading="lazy" src={faceimg} alt="face-pic" />
-                        <h2>Face</h2>
+                        <h2>Face Products</h2>
                     </div>
 
                     <div className="grid">
@@ -134,10 +134,12 @@ export default function Face() {
                                     <div className="category-img">
                                         <img loading="lazy" src={product.image} alt={product.name} />
                                     </div>
-                                    <h3>{product.name}</h3>
-                                    <p>price: ${product.price}</p>
-                                    <div className="add-cart-btn">
-                                        <button onClick={() => addProductToCart(product)}><PiShoppingCartSimpleFill className='icon' />Add to cart</button>
+                                    <div className="bottam">
+                                        <h3>{product.name}</h3>
+                                        <p>Rs.{product.price}</p>
+                                        <div className="add-cart-btn">
+                                            <button onClick={() => addProductToCart(product)}><PiShoppingCartSimpleFill className='icon' />Add to cart</button>
+                                        </div>
                                     </div>
                                 </div>
                             ))
