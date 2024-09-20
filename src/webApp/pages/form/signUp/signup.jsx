@@ -69,6 +69,7 @@ export default function SignUp() {
             });
             toast.success("Signed up successfully!");
             navigate("/login");
+            window.location.reload();
         }
     };
 
@@ -86,9 +87,9 @@ export default function SignUp() {
 
     return (
         <div className="user">
-            <div className="logo">
+            <Link to="/" className="logo">
                 <img loading="lazy" src={logo} alt="logo" />
-            </div>
+            </Link>
             <div className="form" onKeyDown={handleKeyPress}>
                 <div className="form-user">
                     <div className="heading">
@@ -142,9 +143,9 @@ export default function SignUp() {
                             autoComplete="new-password"
                         />
                         {showPassword ? (
-                            <FaEyeSlash onClick={togglePasswordVisibility} className="password-icon" />
-                        ) : (
                             <FaEye onClick={togglePasswordVisibility} className="password-icon" />
+                        ) : (
+                            <FaEyeSlash onClick={togglePasswordVisibility} className="password-icon" />
                         )}
                         <div className="forgot">
                             <Link>Forgot Password?</Link>

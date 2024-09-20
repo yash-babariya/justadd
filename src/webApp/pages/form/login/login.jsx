@@ -3,11 +3,13 @@ import { useSelector } from 'react-redux';
 import toast from 'react-hot-toast';
 import '../form.scss'
 import logo from '../../../../assets/logo/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 export default function Login() {
     const users = useSelector(state => state.user.users);
+
+    const navigate = useNavigate();
 
     const initialValue = {
         email: "",
@@ -50,6 +52,7 @@ export default function Login() {
             if (foundUser) {
                 toast.success("Login Successful!");
                 localStorage.setItem("IsLogin", "true");
+                navigate("/");
                 window.location.reload();
             } else {
                 toast.error("Invalid email or password. Please try again.");
@@ -66,9 +69,9 @@ export default function Login() {
 
     return (
         <div className="user">
-            <div className="logo">
+            <Link to="/" className="logo">
                 <img loading="lazy" src={logo} alt="logo" />
-            </div>
+            </Link>
             <div className="form">
                 <div className="form-user">
                     <div className="heading">
@@ -100,9 +103,9 @@ export default function Login() {
                             autoComplete="new-password"
                         />
                         {showPassword ? (
-                            <FaEyeSlash onClick={togglePasswordVisibility} className="password-icon" />
-                        ) : (
                             <FaEye onClick={togglePasswordVisibility} className="password-icon" />
+                        ) : (
+                            <FaEyeSlash onClick={togglePasswordVisibility} className="password-icon" />
                         )}
                         <div className="forgot">
                             <Link>Forgot Password?</Link>
@@ -114,7 +117,7 @@ export default function Login() {
                     <div className="change-form">
                         <p>
                             Don't have an account?{' '}
-                            <Link to="/">Sign Up</Link>
+                            <Link to="/signup">Sign Up</Link>
                         </p>
                     </div>
                 </div>

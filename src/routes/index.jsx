@@ -23,27 +23,27 @@ import Eyes from '../webApp/pages/category/cosmetics/categorys/eyes/index.jsx';
 
 const router = createBrowserRouter([
     {
-        path: "/",
-        element: localStorage.getItem('IsSignUp') === 'true' ? <Navigate to="/login" /> : <SignUp />
+        path: "/signup",
+        element: <SignUp />
     },
     {
         path: "/login",
-        element: localStorage.getItem('IsLogin') === 'true' ? <Navigate to="/home" /> : <Login />
+        element: <Login />
     },
     {
         path: "/",
-        element: localStorage.getItem('IsLogin') === 'true' ? <DefaultLayout /> : <Navigate to="/login" />,
+        element: <DefaultLayout />,
         children: [
             {
-                path: "home",
+                path: "/",
                 element: <Home />
             },
             {
-                path: "home/furniture",
+                path: "furniture",
                 element: <Furniture />
             },
             {
-                path: 'home/cosmetics',
+                path: 'cosmetics',
                 element: <Cosmetics />
             },
             {

@@ -1,10 +1,153 @@
 @import '../../../styles/index.scss';
 
 .profile {
+    margin-top: 8px;
     width: 100%;
-    height: 100%;
-    background-color: var(--theme-white-background);
+    height: calc(100vh - 98.03px);
+    border-radius: 8px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        height: 100%;
+        padding: 80px 14px;
+    }
+
+    p {
+        color: var(--theme-primary-color);
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 14px;
+        }
+    }
+
+    .profile-card {
+        display: flex;
+        flex-direction: column; // Stack elements vertically
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff; // Card background
+        border-radius: 8px; // Rounded corners
+        padding: 15px; // Inner padding
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Card shadow
+        margin: 10px 0; // Spacing between cards
+        transition: transform 0.2s; // Transition for hover effect
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        &:hover {
+            transform: translateY(-5px); // Lift effect on hover
+        }
+    }
+
+    .profile-name {
+        font-size: 24px;
+        color: var(--theme-primary-pink-color); // Customize as needed
+        margin: 5px 0; // Margin for spacing
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 18px;
+        }
+    }
+
+    .profile-email {
+        font-size: 16px;
+        color: var(--theme-secondary-color); // Customize as needed
+        margin: 5px 0; // Margin for spacing
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 12px;
+        }
+    }
+
+    .profile-logout {
+        background-color: var(--theme-primary-pink-background); // Danger color for logout
+        color: var(--theme-white-color);
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+        transition: background-color 0.2s;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 12px;
+        }
+
+        &:hover {
+            background-color: var(--theme-primary-pink-background); // Darker shade on hover
+        }
+    }
+
+    section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-title {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: var(--theme-primary-pink-color);
+        text-transform: uppercase; // Make title uppercase for emphasis
+    }
+
+    .no-users {
+        text-align: center;
+        margin-top: 10px;
+        color: #888;
+        font-size: 18px;
+
+        h5 {
+            font-weight: bold;
+            color: #ff4d4d; // Optional: color to highlight the message
+        }
+
+        p {
+            color: #555;
+        }
+    }
+
+    .profile-login {
+        display: block;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: var(--theme-primary-pink-background);
+        color: var(--theme-white-color);
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 10px;
+        cursor: pointer;
+    }
 }
