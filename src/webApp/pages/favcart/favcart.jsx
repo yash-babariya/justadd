@@ -18,11 +18,11 @@ export default function FavCart() {
 
         if (isProductInCart) {
             dispatch(removeFromCarts(product));
-            toast.error("removed from cart");
+
         } else {
             dispatch(addToCarts(product));
             dispatch(removeFromFavCarts(product));
-            toast.success("added to cart");
+
         }
     };
 
@@ -31,10 +31,10 @@ export default function FavCart() {
         const isProductInCart = favItems.some(item => item.id === product.id);
         if (isProductInCart) {
             dispatch(removeFromFavCarts(product));
-            toast.error("removed from fav");
+
         } else {
             dispatch(favCarts(product));
-            toast.success("added to fav");
+
             setAnimateFavIcon(true);
             setTimeout(() => setAnimateFavIcon(false), 500);
         }

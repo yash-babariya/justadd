@@ -88,11 +88,8 @@ export default function Face() {
     const addProductToCart = (product) => {
         const isProductInCart = cartItems.some(item => item.id === product.id);
 
-        if (isProductInCart) {
-            toast("remove from whishlist.", { style: { backgroundColor: "#E8407B", color: "white" } });
-        } else {
+        if (!isProductInCart) {
             dispatch(addToCarts(product));
-            toast.success("product added to cart successfully");
         }
     };
 
@@ -101,10 +98,8 @@ export default function Face() {
         const isProductInCart = favItems.some(item => item.id === product.id);
         if (isProductInCart) {
             dispatch(removeFromFavCarts(product));
-            toast("Product removed from favorite list", { style: { backgroundColor: "#E8407B", color: "white" } });
         } else {
             dispatch(favCarts(product));
-            toast.success("product added to favorite list successfully");
             setAnimateFavIcon(true);
             setTimeout(() => setAnimateFavIcon(false), 500);
         }

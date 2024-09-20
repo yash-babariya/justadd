@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
-import './checkout.scss'
+import './checkout.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { calculateTotalPrice } from '../../../redux/cart/cart';
 import { FaFileDownload } from 'react-icons/fa';
 import { IoBagCheckOutline } from 'react-icons/io5';
+import jsPDF from 'jspdf';
+import 'jspdf-autotable';
 
 export default function Checkout() {
     const dispatch = useDispatch();
@@ -13,6 +15,27 @@ export default function Checkout() {
     useEffect(() => {
         dispatch(calculateTotalPrice());
     }, [cartItems, dispatch]);
+
+    const downloadPDF = () => {
+        const doc = new jsPDF();
+        const tableColumn = ['Product', 'Price', 'Quantity', 'Total'];
+        const tableRows = [];
+
+        cartItems.forEach(item => {
+            const itemData = [
+                item.name,
+                `$${item.price}`,
+                item.quantity,
+                `$${item.price * item.quantity}`
+            ];
+            tableRows.push(itemData);
+        });
+
+        doc.autoTable(tableColumn, tableRows, { startY: 20 });
+        doc.text(`Total Price: $${totalPrice}`, 14, doc.autoTable.previous.finalY + 10);
+        doc.save('invoice.pdf');
+    };
+
     return (
         <div className='checkout'>
             <div className="container">
@@ -44,7 +67,7 @@ export default function Checkout() {
                         <p>Total Price: ${totalPrice}</p>
                     </div>
                     <div className="invoice">
-                        <button>
+                        <button onClick={downloadPDF}>
                             <FaFileDownload />
                             Download PDF
                         </button>
@@ -52,5 +75,5 @@ export default function Checkout() {
                 </div>
             </div>
         </div>
-    )
+    );
 }

@@ -22,10 +22,10 @@ export default function WoodenCabbinet() {
 
         if (isProductInCart) {
             dispatch(removeFromCarts(product));
-            toast.error("removed from cart");
+
         } else {
             dispatch(addToCarts(product));
-            toast.success("added to cart");
+
         }
     };
 
@@ -39,10 +39,10 @@ export default function WoodenCabbinet() {
         const isProductInFavs = favItems.some(item => item.id === product.id);
         if (isProductInFavs) {
             dispatch(removeFromFavCarts(product));
-            toast.error("removed from fav");
+
         } else {
             dispatch(favCarts(product));
-            toast.success("added to fav");
+
             setAnimateFavIcon(true);
             setTimeout(() => setAnimateFavIcon(false), 500);
         }

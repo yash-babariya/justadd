@@ -20,6 +20,7 @@ export const cartSlice = createSlice({
                 return;
             }
             state.count += 1;
+            toast.success("added to cart");
             state.items.push({ ...action.payload, quantity: 1 }); // Set initial quantity to 1
             localStorage.setItem("count", state.count);
             localStorage.setItem("cart", JSON.stringify(state.items));
@@ -30,6 +31,7 @@ export const cartSlice = createSlice({
                 return;
             }
             state.favCount += 1;
+            toast.success("added to fav");
             state.favs.push(action.payload);
             localStorage.setItem("favCount", state.favCount);
             localStorage.setItem("fav", JSON.stringify(state.favs));
@@ -43,6 +45,7 @@ export const cartSlice = createSlice({
             if (removedItemIndex !== -1) {
                 state.items.splice(removedItemIndex, 1);
                 state.count -= 1;
+                toast.error("removed from cart");
                 localStorage.setItem("count", state.count.toString());
                 localStorage.setItem("cart", JSON.stringify(state.items));
             }
@@ -56,6 +59,7 @@ export const cartSlice = createSlice({
             if (removedItemIndex !== -1) {
                 state.favs.splice(removedItemIndex, 1);
                 state.favCount -= 1;
+                toast.error("removed from fav");
                 localStorage.setItem("favCount", state.favCount.toString());
                 localStorage.setItem("fav", JSON.stringify(state.favs));
             }
