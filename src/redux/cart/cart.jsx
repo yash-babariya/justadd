@@ -8,7 +8,7 @@ const initialCart = {
     favs: JSON.parse(localStorage.getItem("fav")) || [],
 };
 
-const isLoggedIn = localStorage.getItem("isLoggedIn") === 'true';
+const isLoggedIn = localStorage.getItem("IsLogin") === 'true';
 
 export const cartSlice = createSlice({
     name: "cart",
