@@ -43,14 +43,6 @@ const router = createBrowserRouter([
                 element: <Furniture />
             },
             {
-                path: 'cosmetics',
-                element: <Cosmetics />
-            },
-            {
-                path: "eyes",
-                element: <Eyes />
-            },
-            {
                 path: "chair",
                 element: <Chair />
             },
@@ -91,9 +83,33 @@ const router = createBrowserRouter([
                 element: <FavCart />
             },
             {
+                path: 'cosmetics',
+                element: <Cosmetics />
+            },
+            {
+                path: "eyes",
+                element: <Eyes />
+            },
+            {
                 path: "face",
                 element: <Face />
-            }
+            },
+            {
+                path: "hair",
+                element: <Face />
+            },
+            {
+                path: "lips",
+                element: <Face />
+            },
+            {
+                path: "skin",
+                element: <Face />
+            },
+            {
+                path: "nails",
+                element: <Face />
+            },
         ]
     },
     {

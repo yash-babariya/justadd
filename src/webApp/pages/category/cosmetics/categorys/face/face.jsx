@@ -12,7 +12,6 @@ import faceProduct8 from '../../../../../../assets/images/face-9 TO 5 PRIMER + M
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCarts, favCarts, removeFromFavCarts } from '../../../../../../redux/cart/cart';
-import toast from 'react-hot-toast';
 import { FiHeart } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
@@ -116,7 +115,7 @@ export default function Face() {
                 <section>
                     <div className="heading">
                         <img loading="lazy" src={faceimg} alt="face-pic" />
-                        <h2>Face Products</h2>
+                        <h2>Products</h2>
                     </div>
 
                     <div className="grid">

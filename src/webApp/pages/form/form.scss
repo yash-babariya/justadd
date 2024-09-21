@@ -41,7 +41,6 @@
         .form-user {
             width: 100%;
             padding: 20px;
-            border-radius: 10px;
             background-color: var(--theme-white-background);
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
@@ -49,7 +48,7 @@
             .heading {
                 h2 {
                     text-align: center;
-                    color: var(--theme-primary-color);
+                    color: var(--theme-grey-color);
                     font-size: 35px;
                     font-weight: 800;
 
@@ -75,7 +74,7 @@
                     transform: translateY(-50%);
                     cursor: pointer;
                     font-size: 20px; // Adjust the font size as needed
-                    color: var(--theme-primary-color);
+                    color: var(--theme-grey-color);
 
                     @media (max-width: 768px) {
                         font-size: 18px; // Adjust for smaller screens if necessary
@@ -86,7 +85,7 @@
                 label {
                     font-size: 18px;
                     font-weight: 500;
-                    color: var(--theme-primary-color);
+                    color: var(--theme-grey-color);
 
                     @media (max-width: 768px) {
                         font-size: 16px;
@@ -99,9 +98,8 @@
                     padding: 8px 5px;
                     border: none;
                     outline: none;
-                    border-radius: 6px;
                     box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
-                    color: var(--theme-primary-color);
+                    color: var(--theme-grey-color);
                     font-size: 18px;
 
                     @media (max-width: 768px) {
@@ -125,13 +123,12 @@
                 button {
                     padding: 8px 30px;
                     cursor: pointer;
-                    border: 1px solid var(--theme-primary-border);
-                    background-color: var(--theme-primary-background);
+                    border: none;
+                    background-color: var(--theme-primary-pink-background);
                     color: var(--theme-white-color);
                     outline: none;
                     font-size: 20px;
                     font-weight: 500;
-                    border-radius: 5px;
 
                     @media (max-width: 768px) {
                         font-size: 16px;
@@ -144,7 +141,7 @@
                 margin-top: 12px;
 
                 a {
-                    color: var(--theme-primary-color);
+                    color: var(--theme-primary-pink-color);
                     font-size: 18px;
                     font-weight: 500;
                     display: block;
@@ -163,7 +160,7 @@
                 font-size: 16px;
 
                 a {
-                    color: var(--theme-primary-color);
+                    color: var(--theme-primary-pink-color);
                     font-size: 16px;
 
                     @media (max-width: 768px) {

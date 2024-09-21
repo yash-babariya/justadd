@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './herobanner.scss';
 import pic1 from '../../../../../assets/images/cart1.jpg';
 import pic2 from '../../../../../assets/images/cart2.jpg';
@@ -9,17 +10,17 @@ import pic6 from '../../../../../assets/images/cart6.webp';
 import { RiCloseCircleFill } from "react-icons/ri";
 
 const products = [
-    { id: 'pin1', name: 'Wall Decor', price: 42, image: pic1 },
-    { id: 'pin2', name: 'Wooden Sofa', price: 159, image: pic2 },
-    { id: 'pin3', name: 'Table lamp', price: 45, image: pic3 },
-    { id: 'pin4', name: 'Cushion Cover', price: 6, image: pic4 },
-    { id: 'pin5', name: 'SideTable', price: 60, image: pic5 },
-    { id: 'pin6', name: 'Window curtain', price: 30, image: pic6 }
+    { id: 'pin1', name: 'Wall Decor', price: 42, image: pic1, path: '/sofa' },
+    { id: 'pin2', name: 'Wooden Sofa', price: 159, image: pic2, path: '/sitting-sofa' },
+    { id: 'pin3', name: 'Table lamp', price: 45, image: pic3, path: '/chain-lamp' },
+    { id: 'pin4', name: 'Cushion Cover', price: 6, image: pic4, path: '/sofa' },
+    { id: 'pin5', name: 'SideTable', price: 60, image: pic5, path: '/chair' },
+    { id: 'pin6', name: 'Window curtain', price: 30, image: pic6, path: '/chair' },
 ];
 
 function Cart({ product, closeCart }) {
     return (
-        <aside className="cart" onClick={(e) => e.stopPropagation()}>
+        <Link to={product.path} className="cart" onClick={(e) => e.stopPropagation()}>
             <button onClick={closeCart} className='close-icon' aria-label="Close cart">
                 <RiCloseCircleFill />
             </button>
@@ -30,7 +31,7 @@ function Cart({ product, closeCart }) {
                     <p>${product.price}</p>
                 </figcaption>
             </figure>
-        </aside>
+        </Link>
     );
 }
 

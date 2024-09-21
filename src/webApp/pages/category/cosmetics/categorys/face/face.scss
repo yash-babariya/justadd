@@ -156,7 +156,7 @@
                             align-items: center;
                             justify-content: center;
                             gap: 5px;
-                            background-color: var(--theme-primary-color);
+                            background-color: var(--theme-primary-pink-background);
                             color: var(--theme-white-color);
                             padding: 10px 20px;
                             border: none;
@@ -168,7 +168,7 @@
                             transition: .3s ease-in-out;
 
                             &:hover {
-                                background-color: #ec1c80;
+                                background-color: var(--theme-primary-background);
                             }
 
                             .icon {
