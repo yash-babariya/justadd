@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 export default function AddCart() {
     const dispatch = useDispatch();
     const cartItems = useSelector(state => state.cart.items);
+    const totalPrice = useSelector(state => state.cart.totalPrice); // Assuming you have a totalPrice in the redux store
 
     useEffect(() => {
         dispatch(calculateTotalPrice());
@@ -20,7 +21,9 @@ export default function AddCart() {
     };
 
     const handleDecrement = (item) => {
-        dispatch(decrementItemQuantity(item));
+        if (item.quantity > 1) {
+            dispatch(decrementItemQuantity(item));
+        }
     };
 
     const handleDelete = (item) => {
@@ -38,6 +41,7 @@ export default function AddCart() {
                         cartItems.length === 0 ? (
                             <div className='no-data-message'>
                                 <p>Your cart is empty</p>
+                                <Link to="/" className="shop-now-btn">Shop Now</Link>
                             </div>
                         ) : (
                             cartItems.map(item => (
@@ -52,22 +56,30 @@ export default function AddCart() {
                                         <div className="actions">
                                             <button onClick={() => handleIncrement(item)}>+</button>
                                             <p>Quantity: {item.quantity}</p>
-                                            <button onClick={() => handleDecrement(item)}>-</button>
+                                            <button
+                                                onClick={() => handleDecrement(item)}
+                                                disabled={item.quantity === 1}
+                                            >-</button>
                                         </div>
-                                        <button className='delete-btn' onClick={() => handleDelete(item)}><RiDeleteBin5Line className='icon' />Remove from cart</button>
+                                        <button className='delete-btn' onClick={() => handleDelete(item)}>
+                                            <RiDeleteBin5Line className='icon' />Remove from cart
+                                        </button>
                                     </div>
                                 </div>
                             ))
                         )
                     }
                 </div>
-                <div className="chack-out-button">
-                    <Link to="/checkout">
-                        <button>Checkout<IoBagCheckOutline /></button>
-                    </Link>
-                </div>
+                {
+                    cartItems.length > 0 && (
+                        <div className="checkout-section">
+                            <Link to="/checkout" className="checkout">
+                                <button>Checkout <IoBagCheckOutline /></button>
+                            </Link>
+                        </div>
+                    )
+                }
             </div>
         </div>
     );
 }
-
